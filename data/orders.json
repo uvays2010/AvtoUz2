@@ -1,0 +1,108 @@
+{
+  "orders": [
+    {
+      "id": 1001,
+      "userId": 1,
+      "items": [
+        { "carId": 1, "name": "BMW X5", "quantity": 1, "price": 85000000 }
+      ],
+      "subtotal": 85000000,
+      "tax": 10200000,
+      "shipping": 0,
+      "discount": 0,
+      "total": 95200000,
+      "status": "delivered",
+      "paymentMethod": "card",
+      "paymentStatus": "paid",
+      "address": "Toshkent, Chilonzor 15",
+      "city": "Toshkent",
+      "zipCode": "100000",
+      "phone": "+998 90 123 45 67",
+      "email": "admin@car-enterprise.uz",
+      "fullName": "Admin",
+      "notes": "",
+      "trackingNumber": "TRK-001",
+      "deliveredAt": "2026-01-20T10:00:00Z",
+      "createdAt": "2026-01-15T10:00:00Z",
+      "updatedAt": "2026-01-20T10:00:00Z"
+    },
+    {
+      "id": 1002,
+      "userId": 2,
+      "items": [
+        { "carId": 2, "name": "Mercedes S-Class", "quantity": 1, "price": 120000000 }
+      ],
+      "subtotal": 120000000,
+      "tax": 14400000,
+      "shipping": 0,
+      "discount": 0,
+      "total": 134400000,
+      "status": "processing",
+      "paymentMethod": "cash",
+      "paymentStatus": "pending",
+      "address": "Toshkent, Yunusobod 7",
+      "city": "Toshkent",
+      "zipCode": "100000",
+      "phone": "+998 90 123 45 67",
+      "email": "alisher@example.com",
+      "fullName": "Alisher Karimov",
+      "notes": "Ertaga yetkazib bering",
+      "trackingNumber": "",
+      "deliveredAt": null,
+      "createdAt": "2026-01-10T10:00:00Z",
+      "updatedAt": "2026-01-12T10:00:00Z"
+    },
+    {
+      "id": 1003,
+      "userId": 3,
+      "items": [
+        { "carId": 3, "name": "Toyota Camry", "quantity": 1, "price": 35000000 }
+      ],
+      "subtotal": 35000000,
+      "tax": 4200000,
+      "shipping": 0,
+      "discount": 3000000,
+      "total": 36200000,
+      "status": "shipped",
+      "paymentMethod": "card",
+      "paymentStatus": "paid",
+      "address": "Toshkent, Sergeli 3",
+      "city": "Toshkent",
+      "zipCode": "100000",
+      "phone": "+998 90 234 56 78",
+      "email": "dilnoza@example.com",
+      "fullName": "Dilnoza Abdullaeva",
+      "notes": "",
+      "trackingNumber": "TRK-003",
+      "deliveredAt": null,
+      "createdAt": "2026-01-08T10:00:00Z",
+      "updatedAt": "2026-01-09T10:00:00Z"
+    },
+    {
+      "id": 1004,
+      "userId": 4,
+      "items": [
+        { "carId": 4, "name": "Honda Accord", "quantity": 1, "price": 32000000 }
+      ],
+      "subtotal": 32000000,
+      "tax": 3840000,
+      "shipping": 0,
+      "discount": 0,
+      "total": 35840000,
+      "status": "pending",
+      "paymentMethod": "bank",
+      "paymentStatus": "pending",
+      "address": "Toshkent, Mirobod 12",
+      "city": "Toshkent",
+      "zipCode": "100000",
+      "phone": "+998 90 345 67 89",
+      "email": "javlon@example.com",
+      "fullName": "Javlon Abdullayev",
+      "notes": "Bank o'tkazmasi orqali",
+      "trackingNumber": "",
+      "deliveredAt": null,
+      "createdAt": "2026-01-05T10:00:00Z",
+      "updatedAt": "2026-01-05T10:00:00Z"
+    }
+  ]
+}

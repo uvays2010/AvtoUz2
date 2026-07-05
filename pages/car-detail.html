@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashina batafsil | Car Enterprise</title>
+    
+    <meta name="description" content="Avtomobil haqida batafsil ma'lumot">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/car-detail.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45"/></svg>
+                <div class="loader-text">Car Enterprise</div>
+            </div>
+            <div class="loader-progress"><div class="progress-bar" id="progressBar"></div></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contact">
+                        <a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                        <a href="mailto:info@car-enterprise.uz"><i class="fas fa-envelope"></i> info@car-enterprise.uz</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="header-auth">
+                        <a href="login.html" class="auth-link"><i class="fas fa-user"></i> Kirish</a>
+                        <a href="register.html" class="auth-link register"><i class="fas fa-user-plus"></i> Ro'yxat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                            <li><a href="cars.html" class="active"><i class="fas fa-car"></i> Mashinalar</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> Biz haqimizda</a></li>
+                            <li><a href="services.html"><i class="fas fa-cogs"></i> Xizmatlar</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-images"></i> Galereya</a></li>
+                            <li><a href="shop.html"><i class="fas fa-store"></i> Do'kon</a></li>
+                            <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Aloqa</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                        <button class="search-toggle" id="searchToggle"><i class="fas fa-search"></i></button>
+                        <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cartCount">0</span></a>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal-content">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Mashina nomi, brend yoki kategoriya bo'yicha qidiring...">
+                    <button id="searchSubmit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item"><i class="fas fa-car"></i> BMW X5</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Mercedes-Benz S-Class</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Toyota Camry</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="page-title" id="carTitle">Mashina <span>batafsil</span></h1>
+                <p class="page-subtitle" id="carSubtitle">Avtomobil haqida to'liq ma'lumot</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Bosh sahifa</a>
+                    <span class="separator">/</span>
+                    <a href="cars.html">Mashinalar</a>
+                    <span class="separator">/</span>
+                    <span id="breadcrumbCar">Mashina batafsil</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Detail -->
+    <section class="car-detail-section" data-aos="fade-up">
+        <div class="container">
+            <div class="car-detail-layout">
+                <!-- Gallery -->
+                <div class="car-gallery">
+                    <div class="main-image">
+                        <a href="../images/cars/default.jpg" data-lightbox="gallery" id="mainImageLink">
+                            <img src="../images/cars/default.jpg" alt="Mashina" id="mainImage">
+                        </a>
+                    </div>
+                    <div class="thumbnails" id="thumbnails">
+                        <!-- Thumbnails loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Car Info -->
+                <div class="car-info" id="carInfo">
+                    <!-- Car info loaded dynamically -->
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="car-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="description">Tavsif</button>
+                    <button class="tab-btn" data-tab="specs">Texnik xususiyatlar</button>
+                    <button class="tab-btn" data-tab="features">Xususiyatlar</button>
+                    <button class="tab-btn" data-tab="reviews">Sharhlar</button>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-content active" data-content="description" id="tabDescription">
+                        <!-- Description loaded dynamically -->
+                    </div>
+                    <div class="tab-content" data-content="specs" id="tabSpecs">
+                        <!-- Specs loaded dynamically -->
+                    </div>
+                    <div class="tab-content" data-content="features" id="tabFeatures">
+                        <!-- Features loaded dynamically -->
+                    </div>
+                    <div class="tab-content" data-content="reviews" id="tabReviews">
+                        <!-- Reviews loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Cars -->
+            <section class="related-cars" data-aos="fade-up">
+                <div class="section-header d-flex justify-between align-center">
+                    <div>
+                        <span class="section-badge">Boshqa mashinalar</span>
+                        <h2 class="section-title">Sizga <span>yoqishi</span> mumkin</h2>
+                    </div>
+                    <a href="cars.html" class="btn btn-outline">Barchasini ko'rish <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="cars-grid" id="relatedCars">
+                    <!-- Related cars loaded dynamically -->
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="../index.html">
+                                <img src="../images/icons/logo.svg" alt="Car Enterprise">
+                                <span>Car <span>Enterprise</span></span>
+                            </a>
+                        </div>
+                        <p>Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tez havolalar</h4>
+                        <ul>
+                            <li><a href="../index.html">Bosh sahifa</a></li>
+                            <li><a href="cars.html">Mashinalar</a></li>
+                            <li><a href="about.html">Biz haqimizda</a></li>
+                            <li><a href="services.html">Xizmatlar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Aloqa</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><a href="#">Avtomobil sotish</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Kredit</a></li>
+                            <li><a href="#">Lizing</a></li>
+                            <li><a href="#">Sug'urta</a></li>
+                            <li><a href="#">Servis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Bog'lanish</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Toshkent, O'zbekiston</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@car-enterprise.uz">info@car-enterprise.uz</a></li>
+                            <li><i class="fas fa-clock"></i><span>Dushanba - Shanba: 09:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 <a href="../index.html">Car Enterprise</a>. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-links">
+                        <a href="#">Maxfiylik siyosati</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Cookie siyosati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/car-detail.js"></script>
+    
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
+</body>
+</html>

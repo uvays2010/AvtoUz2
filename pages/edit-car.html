@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashina tahrirlash | Car Enterprise</title>
+    
+    <meta name="description" content="Avtomobil ma'lumotlarini tahrirlash">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45"/></svg>
+                <div class="loader-text">Car Enterprise</div>
+            </div>
+            <div class="loader-progress"><div class="progress-bar" id="progressBar"></div></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contact">
+                        <a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                        <a href="mailto:info@car-enterprise.uz"><i class="fas fa-envelope"></i> info@car-enterprise.uz</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="header-auth">
+                        <a href="login.html" class="auth-link"><i class="fas fa-user"></i> Kirish</a>
+                        <a href="register.html" class="auth-link register"><i class="fas fa-user-plus"></i> Ro'yxat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                            <li><a href="cars.html"><i class="fas fa-car"></i> Mashinalar</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> Biz haqimizda</a></li>
+                            <li><a href="services.html"><i class="fas fa-cogs"></i> Xizmatlar</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-images"></i> Galereya</a></li>
+                            <li><a href="shop.html"><i class="fas fa-store"></i> Do'kon</a></li>
+                            <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Aloqa</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                        <button class="search-toggle" id="searchToggle"><i class="fas fa-search"></i></button>
+                        <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cartCount">0</span></a>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal-content">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Mashina nomi, brend yoki kategoriya bo'yicha qidiring...">
+                    <button id="searchSubmit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item"><i class="fas fa-car"></i> BMW X5</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Mercedes-Benz S-Class</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Toyota Camry</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="page-title">Mashina <span>tahrirlash</span></h1>
+                <p class="page-subtitle">Avtomobil ma'lumotlarini yangilang</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Bosh sahifa</a>
+                    <span class="separator">/</span>
+                    <a href="dashboard.html">Shaxsiy kabinet</a>
+                    <span class="separator">/</span>
+                    <span>Mashina tahrirlash</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edit Car Form -->
+    <section class="edit-car-section" data-aos="fade-up">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h3>Avtomobil ma'lumotlarini tahrirlash</h3>
+                    <p>Barcha maydonlarni to'ldiring</p>
+                </div>
+
+                <form id="editCarForm" class="edit-car-form" enctype="multipart/form-data">
+                    <!-- Car ID (hidden) -->
+                    <input type="hidden" id="carId" value="">
+
+                    <div class="form-row">
+                        <!-- Brand -->
+                        <div class="form-group">
+                            <label for="carBrand">Brend <span class="required">*</span></label>
+                            <select id="carBrand" required>
+                                <option value="">Brendni tanlang</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Lexus">Lexus</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Porsche">Porsche</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="KIA">KIA</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Tesla">Tesla</option>
+                                <option value="Boshqa">Boshqa</option>
+                            </select>
+                        </div>
+
+                        <!-- Model -->
+                        <div class="form-group">
+                            <label for="carModel">Model <span class="required">*</span></label>
+                            <input type="text" id="carModel" placeholder="Mashina modeli" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <!-- Year -->
+                        <div class="form-group">
+                            <label for="carYear">Yil <span class="required">*</span></label>
+                            <select id="carYear" required>
+                                <option value="">Yilni tanlang</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                            </select>
+                        </div>
+
+                        <!-- Category -->
+                        <div class="form-group">
+                            <label for="carCategory">Kategoriya <span class="required">*</span></label>
+                            <select id="carCategory" required>
+                                <option value="">Kategoriyani tanlang</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="Krossover">Krossover</option>
+                                <option value="Hatchback">Hatchback</option>
+                                <option value="Universal">Universal</option>
+                                <option value="Sport">Sport</option>
+                                <option value="Luxury">Luxury</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <!-- Price -->
+                        <div class="form-group">
+                            <label for="carPrice">Narx (so'm) <span class="required">*</span></label>
+                            <input type="number" id="carPrice" placeholder="Mashina narxi" required>
+                        </div>
+
+                        <!-- Old Price -->
+                        <div class="form-group">
+                            <label for="carOldPrice">Eski narx (chegirma uchun)</label>
+                            <input type="number" id="carOldPrice" placeholder="Eski narx (agar mavjud bo'lsa)">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <!-- Fuel Type -->
+                        <div class="form-group">
+                            <label for="carFuel">Yoqilg'i turi <span class="required">*</span></label>
+                            <select id="carFuel" required>
+                                <option value="">Yoqilg'ini tanlang</option>
+                                <option value="Benzin">Benzin</option>
+                                <option value="Dizel">Dizel</option>
+                                <option value="Elektrik">Elektrik</option>
+                                <option value="Gibrid">Gibrid</option>
+                                <option value="Gaz">Gaz</option>
+                            </select>
+                        </div>
+
+                        <!-- Transmission -->
+                        <div class="form-group">
+                            <label for="carTransmission">Transmissiya <span class="required">*</span></label>
+                            <select id="carTransmission" required>
+                                <option value="">Transmissiyani tanlang</option>
+                                <option value="Avtomat">Avtomat</option>
+                                <option value="Mexanik">Mexanik</option>
+                                <option value="Robot">Robot</option>
+                                <option value="Variator">Variator</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <!-- Engine -->
+                        <div class="form-group">
+                            <label for="carEngine">Dvigatel <span class="required">*</span></label>
+                            <input type="text" id="carEngine" placeholder="Masalan: 2.0L" required>
+                        </div>
+
+                        <!-- Power -->
+                        <div class="form-group">
+                            <label for="carPower">Quvvat (ot kuchi) <span class="required">*</span></label>
+                            <input type="number" id="carPower" placeholder="Ot kuchi" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <!-- Color -->
+                        <div class="form-group">
+                            <label for="carColor">Rangi <span class="required">*</span></label>
+                            <input type="text" id="carColor" placeholder="Mashina rangi" required>
+                        </div>
+
+                        <!-- Mileage -->
+                        <div class="form-group">
+                            <label for="carMileage">Yurgan masofa (km)</label>
+                            <input type="number" id="carMileage" placeholder="0 agar yangi bo'lsa">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <!-- Condition -->
+                        <div class="form-group">
+                            <label for="carCondition">Holati <span class="required">*</span></label>
+                            <select id="carCondition" required>
+                                <option value="">Holatini tanlang</option>
+                                <option value="Yangi">Yangi</option>
+                                <option value="Ishlatilgan">Ishlatilgan</option>
+                            </select>
+                        </div>
+
+                        <!-- Status -->
+                        <div class="form-group">
+                            <label for="carStatus">Status</label>
+                            <select id="carStatus">
+                                <option value="Aktiv">Aktiv</option>
+                                <option value="Sotilgan">Sotilgan</option>
+                                <option value="Kutilmoqda">Kutilmoqda</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group">
+                        <label for="carDescription">Tavsif <span class="required">*</span></label>
+                        <textarea id="carDescription" rows="5" placeholder="Avtomobil haqida batafsil ma'lumot..." required></textarea>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="form-group">
+                        <label for="carFeatures">Xususiyatlar</label>
+                        <div class="features-grid" id="featuresGrid">
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Parktronik"> Parktronik
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Kamera"> Kamera
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Sunroof"> Sunroof
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Iqlim nazorati"> Iqlim nazorati
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Ksenon"> Ksenon
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Sensorlar"> Sensorlar
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Karplay"> Karplay
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Massajli o'rindiqlar"> Massajli o'rindiqlar
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Panorama"> Panorama
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="Autopilot"> Autopilot
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="form-group">
+                        <label>Joriy rasmlar</label>
+                        <div class="current-images" id="currentImages">
+                            <!-- Current images loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="carImages">Yangi rasmlar qo'shish</label>
+                        <input type="file" id="carImages" multiple accept="image/*">
+                        <small class="form-hint">JPG, PNG formatidagi rasmlar (maks: 5 ta)</small>
+                        <div class="image-preview" id="imagePreview"></div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Saqlash
+                        </button>
+                        <a href="dashboard.html" class="btn btn-outline">
+                            <i class="fas fa-times"></i> Bekor qilish
+                        </a>
+                        <button type="button" class="btn btn-danger" id="deleteCarBtn">
+                            <i class="fas fa-trash"></i> O'chirish
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="../index.html">
+                                <img src="../images/icons/logo.svg" alt="Car Enterprise">
+                                <span>Car <span>Enterprise</span></span>
+                            </a>
+                        </div>
+                        <p>Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tez havolalar</h4>
+                        <ul>
+                            <li><a href="../index.html">Bosh sahifa</a></li>
+                            <li><a href="cars.html">Mashinalar</a></li>
+                            <li><a href="about.html">Biz haqimizda</a></li>
+                            <li><a href="services.html">Xizmatlar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Aloqa</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><a href="#">Avtomobil sotish</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Kredit</a></li>
+                            <li><a href="#">Lizing</a></li>
+                            <li><a href="#">Sug'urta</a></li>
+                            <li><a href="#">Servis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Bog'lanish</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Toshkent, O'zbekiston</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@car-enterprise.uz">info@car-enterprise.uz</a></li>
+                            <li><i class="fas fa-clock"></i><span>Dushanba - Shanba: 09:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 <a href="../index.html">Car Enterprise</a>. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-links">
+                        <a href="#">Maxfiylik siyosati</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Cookie siyosati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/edit-car.js"></script>
+    
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
+</body>
+</html>

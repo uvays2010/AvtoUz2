@@ -1,0 +1,12 @@
+{
+  "categories": [
+    { "id": 1, "name": "SUV", "slug": "suv", "icon": "fa-car-side", "description": "Sport Utility Vehicle - kuchli va qulay avtomobillar" },
+    { "id": 2, "name": "Sedan", "slug": "sedan", "icon": "fa-car", "description": "Klassik 4 eshikli avtomobillar" },
+    { "id": 3, "name": "Krossover", "slug": "krossover", "icon": "fa-caravan", "description": "SUV va sedan o'rtasidagi avtomobillar" },
+    { "id": 4, "name": "Hatchback", "slug": "hatchback", "icon": "fa-car-rear", "description": "5 eshikli ixcham avtomobillar" },
+    { "id": 5, "name": "Universal", "slug": "universal", "icon": "fa-truck", "description": "Katta yuk joyiga ega avtomobillar" },
+    { "id": 6, "name": "Sport", "slug": "sport", "icon": "fa-flag-checkered", "description": "Yuqori tezlikdagi sport avtomobillar" },
+    { "id": 7, "name": "Luxury", "slug": "luxury", "icon": "fa-crown", "description": "Hashamatli premium avtomobillar" },
+    { "id": 8, "name": "Elektrik", "slug": "elektrik", "icon": "fa-bolt", "description": "Elektr dvigatelli avtomobillar" }
+  ]
+}

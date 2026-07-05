@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevimlilar | Car Enterprise</title>
+    
+    <meta name="description" content="Sevimli avtomobillar">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/favorites.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Header content same as other pages -->
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="page-title">Sevimli <span>mashinalar</span></h1>
+                <p class="page-subtitle">Sizning sevimli avtomobillaringiz</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Bosh sahifa</a>
+                    <span class="separator">/</span>
+                    <span>Sevimlilar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites Section -->
+    <section class="favorites-page">
+        <div class="container">
+            <div class="favorites-toolbar">
+                <div class="favorites-count">
+                    <strong id="favoritesCount">0</strong> ta sevimli mashina
+                </div>
+                <div class="favorites-actions">
+                    <button class="btn btn-outline" onclick="clearFavorites()">
+                        <i class="fas fa-trash"></i> Tozalash
+                    </button>
+                    <a href="cars.html" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Mashina qo'shish
+                    </a>
+                </div>
+            </div>
+
+            <div id="favoritesContainer">
+                <!-- Favorites content loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content same as other pages -->
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/favorites.js"></script>
+    
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
+</body>
+</html>

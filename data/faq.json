@@ -1,0 +1,64 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "category": "sotib-olish",
+      "question": "Avtomobil sotib olish uchun qanday hujjatlar kerak?",
+      "answer": "Avtomobil sotib olish uchun sizga pasport, INN (JShShIR), va sotuvchi bilan shartnoma kerak bo'ladi. Agar kredit orqali sotib olsangiz, qo'shimcha hujjatlar talab qilinishi mumkin."
+    },
+    {
+      "id": 2,
+      "category": "texnik",
+      "question": "Avtomobilni qanday tekshirish kerak?",
+      "answer": "Avtomobilni tekshirishda quyidagilarga e'tibor bering: dvigatel ishlashi, tormoz tizimi, rul boshqaruvi, shinalar holati, korpusdagi zang va shikastlar. Professional diagnostikadan o'tkazish tavsiya etiladi."
+    },
+    {
+      "id": 3,
+      "category": "kredit",
+      "question": "Kredit olish uchun qanday shartlar kerak?",
+      "answer": "Kredit olish uchun sizga doimiy ish joyi, 6 oydan kam bo'lmagan ish staji, va bank talab qilgan boshqa hujjatlar kerak bo'ladi. Kredit miqdori va foiz stavkasi bankka qarab farq qiladi."
+    },
+    {
+      "id": 4,
+      "category": "sotib-olish",
+      "question": "Avtomobilni qancha vaqtda yetkazib berasiz?",
+      "answer": "Avtomobilni yetkazib berish muddati model va ombordagi mavjudligiga bog'liq. O'rtacha 3-7 ish kuni ichida yetkazib beramiz. Ba'zi modellar uchun 2-3 hafta vaqt ketishi mumkin."
+    },
+    {
+      "id": 5,
+      "category": "texnik",
+      "question": "Avtomobilga kafolat bera olasizmi?",
+      "answer": "Ha, barcha avtomobillarga 3 yil yoki 100,000 km gacha kafolat beramiz. Kafolat davrida dvigatel, transmissiya va boshqa muhim qismlar qoplanadi."
+    },
+    {
+      "id": 6,
+      "category": "sotib-olish",
+      "question": "Avtomobilni qanday to'lov usullari bilan sotib olish mumkin?",
+      "answer": "Siz avtomobilni naqd pul, bank o'tkazmasi, kredit yoki lizing orqali sotib olishingiz mumkin. Biz barcha to'lov usullarini qabul qilamiz."
+    },
+    {
+      "id": 7,
+      "category": "sotib-olish",
+      "question": "Avtomobilni qaytarish yoki almashtirish imkoniyati bormi?",
+      "answer": "Ha, sotib olingan kundan boshlab 7 kun ichida avtomobilni qaytarish yoki almashtirish imkoniyati mavjud. Buning uchun avtomobil shikastlanmagan va to'liq komplektda bo'lishi kerak."
+    },
+    {
+      "id": 8,
+      "category": "servis",
+      "question": "Avtomobilga texnik xizmat ko'rsatish qancha turadi?",
+      "answer": "Texnik xizmat ko'rsatish narxi avtomobil modeli va ish hajmiga bog'liq. O'rtacha 500,000 dan 2,000,000 so'mgacha bo'lishi mumkin. Biz sizga aniq narxni avtomobilni ko'rib chiqqandan keyin aytib beramiz."
+    },
+    {
+      "id": 9,
+      "category": "sotib-olish",
+      "question": "Avtomobil sug'urtasini qanday rasmiylashtirish mumkin?",
+      "answer": "Avtomobil sug'urtasini bizning kompaniyamiz orqali yoki mustaqil sug'urta kompaniyalaridan rasmiylashtirishingiz mumkin. Biz sizga eng yaxshi shartlarni taklif qilamiz."
+    },
+    {
+      "id": 10,
+      "category": "texnik",
+      "question": "Avtomobilning texnik holatini qanday bilish mumkin?",
+      "answer": "Siz avtomobilning texnik holatini bizning diagnostika markazimizda tekshirishingiz mumkin. Biz barcha avtomobillarni sotishdan oldin to'liq tekshiruvdan o'tkazamiz."
+    }
+  ]
+}

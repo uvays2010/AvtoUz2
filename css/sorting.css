@@ -1,0 +1,284 @@
+/* ========================================
+   CAR-ENTERPRISE - SORTING STYLES
+   ======================================== */
+
+/* ===== SORT CONTAINER ===== */
+.sort-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    position: relative;
+}
+
+/* ===== SORT TOGGLE ===== */
+.sort-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.sort-toggle:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-hover);
+}
+
+.sort-toggle i {
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+}
+
+.sort-toggle .fa-chevron-down {
+    transition: transform var(--transition-normal);
+}
+
+.sort-toggle.active .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* ===== SORT DROPDOWN ===== */
+.sort-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 200px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-xs) 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-normal);
+}
+
+.sort-dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sort-dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+.sort-dropdown-menu .dropdown-item:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.sort-dropdown-menu .dropdown-item.active {
+    color: var(--primary-color);
+    background: rgba(231, 76, 60, 0.05);
+}
+
+.sort-dropdown-menu .dropdown-item i:first-child {
+    width: 20px;
+    color: var(--text-muted);
+}
+
+.sort-dropdown-menu .dropdown-item.active i:first-child {
+    color: var(--primary-color);
+}
+
+.sort-dropdown-menu .dropdown-item .fa-check {
+    margin-left: auto;
+    color: var(--primary-color);
+}
+
+.sort-dropdown-menu .dropdown-divider {
+    height: 1px;
+    background: var(--border-primary);
+    margin: var(--spacing-xs) 0;
+}
+
+/* ===== SORT SELECT ===== */
+.sort-select {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-sm);
+    cursor: pointer;
+    transition: border-color var(--transition-fast);
+    min-width: 150px;
+}
+
+.sort-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* ===== SORT BUTTONS ===== */
+.sort-buttons {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+}
+
+.sort-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-xs);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.sort-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: var(--bg-hover);
+}
+
+.sort-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+.sort-btn i {
+    font-size: var(--font-xs);
+}
+
+/* ===== SORT LABEL ===== */
+.sort-label {
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+    margin-right: var(--spacing-sm);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .sort-container {
+        width: 100%;
+    }
+    
+    .sort-toggle {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .sort-dropdown-menu {
+        width: 100%;
+        right: auto;
+        left: 0;
+    }
+    
+    .sort-select {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .sort-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .sort-btn {
+        flex: 1;
+        justify-content: center;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-xs);
+    }
+}
+
+@media (max-width: 480px) {
+    .sort-btn {
+        font-size: var(--font-xs);
+        padding: var(--spacing-xs);
+    }
+    
+    .sort-btn span {
+        display: none;
+    }
+    
+    .sort-btn i {
+        font-size: var(--font-md);
+    }
+}
+
+/* ===== DARK THEME ===== */
+[data-theme="dark"] .sort-toggle {
+    background: var(--bg-card);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .sort-toggle:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-hover);
+}
+
+[data-theme="dark"] .sort-dropdown-menu {
+    background: var(--bg-card);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .sort-dropdown-menu .dropdown-item {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .sort-dropdown-menu .dropdown-item:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .sort-dropdown-menu .dropdown-item.active {
+    color: var(--primary-color);
+    background: rgba(231, 76, 60, 0.05);
+}
+
+[data-theme="dark"] .sort-select {
+    background: var(--bg-card);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .sort-btn {
+    border-color: var(--border-primary);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .sort-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: var(--bg-hover);
+}
+
+[data-theme="dark"] .sort-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+[data-theme="dark"] .sort-dropdown-menu .dropdown-divider {
+    background: var(--border-primary);
+}

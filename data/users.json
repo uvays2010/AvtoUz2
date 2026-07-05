@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@car-enterprise.uz",
+      "password": "$2a$10$X9y7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f3g4h5i6j7k8l9m0n1o2p3q4r",
+      "role": "admin",
+      "phone": "+998 90 123 45 67",
+      "avatar": "admin.jpg",
+      "address": "Toshkent, Chilonzor 15",
+      "joined": "2026-01-01T10:00:00Z",
+      "rating": 5.0,
+      "favorites": [1, 2, 3]
+    },
+    {
+      "id": 2,
+      "name": "Alisher Karimov",
+      "email": "alisher@example.com",
+      "password": "$2a$10$X9y7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f3g4h5i6j7k8l9m0n1o2p3q4r",
+      "role": "user",
+      "phone": "+998 90 123 45 67",
+      "avatar": "user1.jpg",
+      "address": "Toshkent, Yunusobod 7",
+      "joined": "2026-01-02T10:00:00Z",
+      "rating": 4.8,
+      "favorites": [3, 5]
+    },
+    {
+      "id": 3,
+      "name": "Dilnoza Abdullaeva",
+      "email": "dilnoza@example.com",
+      "password": "$2a$10$X9y7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f3g4h5i6j7k8l9m0n1o2p3q4r",
+      "role": "user",
+      "phone": "+998 90 234 56 78",
+      "avatar": "user2.jpg",
+      "address": "Toshkent, Sergeli 3",
+      "joined": "2026-01-03T10:00:00Z",
+      "rating": 4.9,
+      "favorites": [1, 4, 6]
+    },
+    {
+      "id": 4,
+      "name": "Javlon Abdullayev",
+      "email": "javlon@example.com",
+      "password": "$2a$10$X9y7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f3g4h5i6j7k8l9m0n1o2p3q4r",
+      "role": "user",
+      "phone": "+998 90 345 67 89",
+      "avatar": "user3.jpg",
+      "address": "Toshkent, Mirobod 12",
+      "joined": "2026-01-04T10:00:00Z",
+      "rating": 4.7,
+      "favorites": [2, 7]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Alisher Karimov",
+      "position": "Biznesmen",
+      "avatar": "users/alisher.jpg",
+      "rating": 5,
+      "text": "Car Enterprise dan BMW X5 sotib oldim. Juda mamnunman! Mashina ajoyib holatda, xizmat esa yuqori darajada. Barchaga tavsiya qilaman.",
+      "car": "BMW X5",
+      "date": "2026-01-15T10:00:00Z",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Dilnoza Abdullaeva",
+      "position": "Marketing mutaxassisi",
+      "avatar": "users/dilnoza.jpg",
+      "rating": 5,
+      "text": "Mercedes S-Class ni Car Enterprise dan sotib olganimdan juda xursandman. Ular bilan ishlash juda oson va qulay. Mashina mukammal!",
+      "car": "Mercedes S-Class",
+      "date": "2026-01-12T10:00:00Z",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "Javlon Abdullayev",
+      "position": "Muhandis",
+      "avatar": "users/javlon.jpg",
+      "rating": 4,
+      "text": "Toyota Camry ni Car Enterprise dan sotib oldim. Yaxshi narx va sifat. Xizmat a'lo darajada. Kredit olishda ham yordam berishdi.",
+      "car": "Toyota Camry",
+      "date": "2026-01-10T10:00:00Z",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "name": "Madina Tursunova",
+      "position": "O'qituvchi",
+      "avatar": "users/madina.jpg",
+      "rating": 5,
+      "text": "Honda Accord ni Car Enterprise dan sotib oldim. Juda mamnunman! Mashina juda tejamkor va qulay. Xodimlar juda mehribon va yordamchi.",
+      "car": "Honda Accord",
+      "date": "2026-01-08T10:00:00Z",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "name": "Sherzod Rahimov",
+      "position": "Dasturchi",
+      "avatar": "users/sherzod.jpg",
+      "rating": 5,
+      "text": "Lexus RX 350 ni Car Enterprise dan sotib oldim. Bu mening orzudagi mashinam edi! Ular menga eng yaxshi variantni taklif qilishdi. Rahmat!",
+      "car": "Lexus RX 350",
+      "date": "2026-01-05T10:00:00Z",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "name": "Gulnora Saidova",
+      "position": "Dizayner",
+      "avatar": "users/gulnora.jpg",
+      "rating": 4,
+      "text": "Audi Q7 ni Car Enterprise dan sotib oldim. Katta va qulay oilaviy mashina. Narxi ham maqbul. Tavsiya qilaman!",
+      "car": "Audi Q7",
+      "date": "2026-01-03T10:00:00Z",
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Enterprise | Premium Avtomobillar</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Eng sifatli avtomobillar, premium xizmat va ajoyib narxlar. Car Enterprise bilan hayotingizni o'zgartiring.">
+    <meta name="keywords" content="avtomobillar, mashinalar, premium, car enterprise, yangi mashinalar">
+    <meta name="author" content="Car Enterprise">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Car Enterprise - Premium Avtomobillar">
+    <meta property="og:description" content="Eng sifatli avtomobillar, premium xizmat va ajoyib narxlar.">
+    <meta property="og:image" content="https://car-enterprise.com/images/og-image.jpg">
+    <meta property="og:url" content="https://car-enterprise.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body>
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" />
+                </svg>
+                <div class="loader-text">Car Enterprise</div>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contact">
+                        <a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                        <a href="mailto:info@car-enterprise.uz"><i class="fas fa-envelope"></i>
+                            info@car-enterprise.uz</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="header-auth">
+                        <a href="pages/login.html" class="auth-link"><i class="fas fa-user"></i> Kirish</a>
+                        <a href="pages/register.html" class="auth-link register"><i class="fas fa-user-plus"></i>
+                            Ro'yxat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                            <li><a href="pages/cars.html"><i class="fas fa-car"></i> Mashinalar</a></li>
+                            <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> Biz haqimizda</a></li>
+                            <li><a href="pages/services.html"><i class="fas fa-cogs"></i> Xizmatlar</a></li>
+                            <li><a href="pages/blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="pages/gallery.html"><i class="fas fa-images"></i> Galereya</a></li>
+                            <li><a href="pages/shop.html"><i class="fas fa-store"></i> Do'kon</a></li>
+                            <li><a href="pages/contact.html"><i class="fas fa-phone-alt"></i> Aloqa</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="search-toggle" id="searchToggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href="pages/cart.html" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal-content">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput"
+                        placeholder="Mashina nomi, brend yoki kategoriya bo'yicha qidiring...">
+                    <button id="searchSubmit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item"><i class="fas fa-car"></i> BMW X5</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Mercedes-Benz S-Class</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Toyota Camry</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 - VIDEO (AUTOPLAY) -->
+                <div class="swiper-slide hero-slide video-slide">
+                    <video autoplay muted loop playsinline class="hero-video">
+                        <source src="videos/hero.mp4" type="video/mp4">
+                        <source src="videos/hero.webm" type="video/webm">
+                        Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
+                    </video>
+                    <div class="hero-overlay"></div>
+                    <div class="container">
+                        <div class="hero-content" data-aos="fade-up">
+                            <div class="hero-badge">Premium Avtomobillar</div>
+                            <h1 class="hero-title">Hayotingizni <br><span>Luxury</span> bilan o'zgartiring</h1>
+                            <p class="hero-description">Eng sifatli va zamonaviy avtomobillar sizni kutmoqda.</p>
+                            <div class="hero-buttons">
+                                <a href="pages/cars.html" style="color: white;" class="btn btn-primary"><i class="fas fa-car"></i>
+                                    Mashinalarni ko'rish</a>
+                                <a href="pages/about.html" class="btn btn-outline"><i class="fas fa-play-circle"></i>
+                                    Ko'proq ma'lumot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 - RASM -->
+                <div class="swiper-slide hero-slide" style="background-image: url('images/banners/hero-banner-2.jpg');">
+                    <div class="container">
+                        <div class="hero-content" data-aos="fade-up">
+                            <div class="hero-badge">Chegirmalar 50% gacha</div>
+                            <h1 class="hero-title">Yangi avtomobillarni <br><span>arzon narxlarda</span> xarid qiling
+                            </h1>
+                            <p class="hero-description">Yilning eng katta aksiyasi! 0% kredit imkoniyatlari.</p>
+                            <div class="hero-buttons">
+                                <a href="pages/shop.html" class="btn btn-primary"><i class="fas fa-shopping-bag"></i>
+                                    Xarid qilish</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 - RASM -->
+                <div class="swiper-slide hero-slide" style="background-image: url('images/banners/hero-banner-3.jpg');">
+                    <div class="container">
+                        <div class="hero-content" data-aos="fade-up">
+                            <div class="hero-badge">Test Drive</div>
+                            <h1 class="hero-title">Mashinani <br><span>sinab ko'ring</span> va qaror qiling</h1>
+                            <p class="hero-description">Har bir mashinani sinab ko'rish imkoniyati.</p>
+                            <div class="hero-buttons">
+                                <a href="pages/cars.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i>
+                                    Test Drive band qilish</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Nega biz?</span>
+                <h2 class="section-title">Nima uchun <span>Car Enterprise</span>?</h2>
+                <p class="section-description">Biz sizga eng yaxshi xizmat va sifatni taqdim etamiz</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Ishonchli</h3>
+                    <p>Barcha avtomobillar to'liq tekshiruvdan o'tgan va sifat sertifikatiga ega</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Arzon narxlar</h3>
+                    <p>Eng past narxlar va 0% kredit imkoniyatlari, har kimga mos</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Yordam</h3>
+                    <p>Kun bo'yi va kechasi sizga yordam berishga tayyormiz</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fas fa-gas-pump"></i></div>
+                    <h3>Bepul yoqilg'i</h3>
+                    <p>Har bir xaridda 1 oy davomida bepul yoqilg'i</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                    <h3>3 yil garantiya</h3>
+                    <p>Barcha avtomobillarga 3 yil davomida to'liq garantiya</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Almashtirish</h3>
+                    <p>7 kun ichida mashinani almashtirish imkoniyati</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CARS SECTION ===== -->
+    <section class="cars-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header d-flex justify-between align-center">
+                <div>
+                    <span class="section-badge">Mashinalar</span>
+                    <h2 class="section-title">Eng <span>mashhur</span> avtomobillar</h2>
+                    <p class="section-description">Eng ko'p sotilgan va eng yaxshi avtomobillar</p>
+                </div>
+                <a href="pages/cars.html" class="btn btn-outline">Barchasini ko'rish <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="cars-grid">
+                <!-- Car 1: BMW X5 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="images/cars/bmw-x5-1.jpg" alt="BMW X5" loading="lazy" onerror="this.src='images/cars/default.jpg'">
+                        <span class="car-badge">Yangi</span>
+                        <div class="car-actions">
+                            <button onclick="alert('❤️ Sevimlilarga qo\'shildi!')"><i class="fas fa-heart"></i></button>
+                            <button onclick="alert('🛒 Savatga qo\'shildi!')"><i class="fas fa-shopping-cart"></i></button>
+                            <button onclick="window.location.href='pages/car-detail.html?id=1'"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h4 class="car-name"><a href="pages/car-detail.html?id=1">BMW X5</a></h4>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-cog"></i> Avtomat</span>
+                            <span><i class="fas fa-paint-bucket"></i> Qora</span>
+                            <span><i class="fas fa-star" style="color:var(--warning);"></i> 4.8 (156)</span>
+                        </div>
+                        <div class="car-price">
+                            <div>
+                                <span class="old-price">92,000,000 so'm</span>
+                                <span class="price">85,000,000 so'm</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="alert('🛒 Savatga qo\'shildi!')">
+                                <i class="fas fa-shopping-cart"></i> Savatga
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 2: Mercedes S-Class -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="images/cars/mercedes-s-class-1.jpg" alt="Mercedes S-Class" loading="lazy" onerror="this.src='images/cars/default.jpg'">
+                        <span class="car-badge">Yangi</span>
+                        <div class="car-actions">
+                            <button onclick="alert('❤️ Sevimlilarga qo\'shildi!')"><i class="fas fa-heart"></i></button>
+                            <button onclick="alert('🛒 Savatga qo\'shildi!')"><i class="fas fa-shopping-cart"></i></button>
+                            <button onclick="window.location.href='pages/car-detail.html?id=2'"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h4 class="car-name"><a href="pages/car-detail.html?id=2">Mercedes S-Class</a></h4>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-cog"></i> Avtomat</span>
+                            <span><i class="fas fa-paint-bucket"></i> Kumush</span>
+                            <span><i class="fas fa-star" style="color:var(--warning);"></i> 4.9 (89)</span>
+                        </div>
+                        <div class="car-price">
+                            <div>
+                                <span class="price">120,000,000 so'm</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="alert('🛒 Savatga qo\'shildi!')">
+                                <i class="fas fa-shopping-cart"></i> Savatga
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 3: Toyota Camry -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="images/cars/toyota-camry-1.jpg" alt="Toyota Camry" loading="lazy" onerror="this.src='images/cars/default.jpg'">
+                        <div class="car-actions">
+                            <button onclick="alert('❤️ Sevimlilarga qo\'shildi!')"><i class="fas fa-heart"></i></button>
+                            <button onclick="alert('🛒 Savatga qo\'shildi!')"><i class="fas fa-shopping-cart"></i></button>
+                            <button onclick="window.location.href='pages/car-detail.html?id=3'"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h4 class="car-name"><a href="pages/car-detail.html?id=3">Toyota Camry</a></h4>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 15,000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-cog"></i> Avtomat</span>
+                            <span><i class="fas fa-paint-bucket"></i> Oq</span>
+                            <span><i class="fas fa-star" style="color:var(--warning);"></i> 4.7 (234)</span>
+                        </div>
+                        <div class="car-price">
+                            <div>
+                                <span class="old-price">38,000,000 so'm</span>
+                                <span class="price">35,000,000 so'm</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="alert('🛒 Savatga qo\'shildi!')">
+                                <i class="fas fa-shopping-cart"></i> Savatga
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 4: Porsche Cayenne -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="images/cars/porsche-cayenne-1.jpg" alt="Porsche Cayenne" loading="lazy" onerror="this.src='images/cars/default.jpg'">
+                        <span class="car-badge">Yangi</span>
+                        <div class="car-actions">
+                            <button onclick="alert('❤️ Sevimlilarga qo\'shildi!')"><i class="fas fa-heart"></i></button>
+                            <button onclick="alert('🛒 Savatga qo\'shildi!')"><i class="fas fa-shopping-cart"></i></button>
+                            <button onclick="window.location.href='pages/car-detail.html?id=4'"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h4 class="car-name"><a href="pages/car-detail.html?id=4">Porsche Cayenne</a></h4>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-cog"></i> Avtomat</span>
+                            <span><i class="fas fa-paint-bucket"></i> Qizil</span>
+                            <span><i class="fas fa-star" style="color:var(--warning);"></i> 4.9 (67)</span>
+                        </div>
+                        <div class="car-price">
+                            <div>
+                                <span class="old-price">125,000,000 so'm</span>
+                                <span class="price">110,000,000 so'm</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm" onclick="alert('🛒 Savatga qo\'shildi!')">
+                                <i class="fas fa-shopping-cart"></i> Savatga
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BANNER SECTION (AUTOPLAY VIDEO) ===== -->
+    <section class="banner-section" data-aos="fade-up">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h2>Maxsus taklif</h2>
+                    <p>Yilning eng katta aksiyasi! Barcha avtomobillarga 30% gacha chegirma</p>
+
+                    <!-- ===== BANNER VIDEO (AUTOPLAY) ===== -->
+                    <div class="banner-video-wrapper">
+                        <video autoplay muted loop playsinline class="banner-video">
+                            <source src="videos/banner.mp4" type="video/mp4">
+                            <source src="videos/banner.webm" type="video/webm">
+                            Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
+                        </video>
+                        <div class="video-caption">
+                            <i class="fas fa-tag"></i>
+                            <span>🔥 Aksiya videosi</span>
+                        </div>
+                    </div>
+
+                    <!-- ===== PROMO VIDEO (AUTOPLAY + CONTROLS) ===== -->
+                    <div class="promo-video-wrapper">
+                        <video controls autoplay muted loop playsinline class="promo-video">
+                            <source src="videos/promo.mp4" type="video/mp4">
+                            <source src="videos/promo.webm" type="video/webm">
+                            Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
+                        </video>
+                        <div class="video-caption">
+                            <i class="fas fa-gift"></i>
+                            <span>🎁 Maxsus promo taklif</span>
+                        </div>
+                    </div>
+
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Kun</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Soat</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Daqiqa</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Sekund</span>
+                        </div>
+                    </div>
+                    <a href="pages/shop.html" style="color: white;" class="btn btn-primary">Hoziroq xarid qiling</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Mijozlar fikri</span>
+                <h2 class="section-title">Mijozlarimiz <span>nimadeyishadi</span>?</h2>
+                <p class="section-description">Bizning mijozlarimiz biz haqimizda shunday deyishadi</p>
+            </div>
+
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="images/users/default-avatar.jpg" alt="Alisher" onerror="this.src='images/users/default-avatar.jpg'">
+                                <div class="author-info">
+                                    <h4>Alisher Karimov</h4>
+                                    <span>Biznesmen</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">Car Enterprise dan BMW X5 sotib oldim. Juda mamnunman! Mashina ajoyib holatda.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="images/users/default-avatar.jpg" alt="Dilnoza" onerror="this.src='images/users/default-avatar.jpg'">
+                                <div class="author-info">
+                                    <h4>Dilnoza Abdullaeva</h4>
+                                    <span>Marketing mutaxassisi</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">Mercedes S-Class ni Car Enterprise dan sotib olganimdan juda xursandman.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="images/users/default-avatar.jpg" alt="Javlon" onerror="this.src='images/users/default-avatar.jpg'">
+                                <div class="author-info">
+                                    <h4>Javlon Abdullayev</h4>
+                                    <span>Muhandis</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">Toyota Camry ni Car Enterprise dan sotib oldim. Yaxshi narx va sifat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG SECTION ===== -->
+    <section class="blog-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header d-flex justify-between align-center">
+                <div>
+                    <span class="section-badge">Blog</span>
+                    <h2 class="section-title">So'nggi <span>maqolalar</span></h2>
+                    <p class="section-description">Avtomobillar haqida eng yangi ma'lumotlar</p>
+                </div>
+                <a href="pages/blog.html" class="btn btn-outline">Barchasini ko'rish <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/car-2026.jpg" alt="2026 avtomobillari" loading="lazy" onerror="this.src='images/blog/default.jpg'">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Alisher Karimov</span>
+                            <span><i class="fas fa-calendar"></i> 15 yanvar 2026</span>
+                            <span><i class="fas fa-comments"></i> 24</span>
+                        </div>
+                        <h3 class="blog-title"><a href="pages/blog-detail.html?id=1">2026 yilning eng yaxshi avtomobillari</a></h3>
+                        <p class="blog-excerpt">Yangi yilda bozorda qanday avtomobillar eng yaxshi deb topildi?</p>
+                        <a href="pages/blog-detail.html?id=1" class="blog-read-more">Ko'proq o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/car-buying-tips.jpg" alt="Maslahatlar" loading="lazy" onerror="this.src='images/blog/default.jpg'">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Dilnoza Abdullaeva</span>
+                            <span><i class="fas fa-calendar"></i> 10 yanvar 2026</span>
+                            <span><i class="fas fa-comments"></i> 18</span>
+                        </div>
+                        <h3 class="blog-title"><a href="pages/blog-detail.html?id=2">Avtomobil sotib olishda 5 ta muhim maslahat</a></h3>
+                        <p class="blog-excerpt">Avtomobil sotib olishdan oldin bilishingiz kerak bo'lgan 5 ta muhim maslahat.</p>
+                        <a href="pages/blog-detail.html?id=2" class="blog-read-more">Ko'proq o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/electric-cars.jpg" alt="Elektromobillar" loading="lazy" onerror="this.src='images/blog/default.jpg'">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Javlon Abdullayev</span>
+                            <span><i class="fas fa-calendar"></i> 8 yanvar 2026</span>
+                            <span><i class="fas fa-comments"></i> 32</span>
+                        </div>
+                        <h3 class="blog-title"><a href="pages/blog-detail.html?id=3">Elektromobillar kelajagi - 2026 tendensiyalari</a></h3>
+                        <p class="blog-excerpt">Elektromobillar bozori qanday rivojlanmoqda?</p>
+                        <a href="pages/blog-detail.html?id=3" class="blog-read-more">Ko'proq o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section" data-aos="fade-up">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Sizning orzuingizdagi mashinani topishga tayyormisiz?</h2>
+                <p>1000+ avtomobil ichidan sizga eng mosini tanlang</p>
+                <div class="cta-buttons">
+                    <a href="pages/cars.html" style="color: white;" class="btn btn-primary">Mashinalarni ko'rish</a>
+                    <a href="pages/contact.html" class="btn btn-outline-light">Biz bilan bog'lanish</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="images/icons/logo.svg" alt="Car Enterprise">
+                                <span>Car <span>Enterprise</span></span>
+                            </a>
+                        </div>
+                        <p>Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Tez havolalar</h4>
+                        <ul>
+                            <li><a href="index.html">Bosh sahifa</a></li>
+                            <li><a href="pages/cars.html">Mashinalar</a></li>
+                            <li><a href="pages/about.html">Biz haqimizda</a></li>
+                            <li><a href="pages/services.html">Xizmatlar</a></li>
+                            <li><a href="pages/blog.html">Blog</a></li>
+                            <li><a href="pages/contact.html">Aloqa</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><a href="#">Avtomobil sotish</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Kredit</a></li>
+                            <li><a href="#">Lizing</a></li>
+                            <li><a href="#">Sug'urta</a></li>
+                            <li><a href="#">Servis</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Bog'lanish</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Toshkent, O'zbekiston</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                            <li><i class="fas fa-envelope"></i><a
+                                    href="mailto:info@car-enterprise.uz">info@car-enterprise.uz</a></li>
+                            <li><i class="fas fa-clock"></i><span>Dushanba - Shanba: 09:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 <a href="index.html">Car Enterprise</a>. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-links">
+                        <a href="#">Maxfiylik siyosati</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Cookie siyosati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== JavaScript ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/search.js"></script>
+
+    <script>
+        // ===== SWIPER - TESTIMONIALS =====
+        new Swiper('.testimonials-slider', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: { delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true },
+            pagination: { el: '.swiper-pagination', clickable: true, dynamicBullets: true },
+            breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+        });
+
+        // ===== COUNTDOWN =====
+        (function() {
+            const days = document.getElementById('days');
+            const hours = document.getElementById('hours');
+            const minutes = document.getElementById('minutes');
+            const seconds = document.getElementById('seconds');
+            if (!days) return;
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 7);
+            setInterval(function() {
+                const diff = targetDate - new Date();
+                if (diff <= 0) { targetDate.setDate(targetDate.getDate() + 7); return; }
+                days.textContent = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
+                hours.textContent = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+                minutes.textContent = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                seconds.textContent = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+            }, 1000);
+        })();
+
+        // ===== COUNTER ANIMATION =====
+        (function() {
+            const counters = document.querySelectorAll('.stat-number[data-count]');
+            if (!counters.length) return;
+            let animated = false;
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting && !animated) {
+                        animated = true;
+                        counters.forEach(function(counter) {
+                            const target = parseInt(counter.dataset.count);
+                            const duration = 2000;
+                            const step = Math.max(1, Math.floor(target / 60));
+                            let current = 0;
+                            const interval = setInterval(function() {
+                                current += step;
+                                if (current >= target) { current = target;
+                                    clearInterval(interval); }
+                                counter.textContent = current + (target > 100 ? '+' : '');
+                            }, duration / 60);
+                        });
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(function(counter) { observer.observe(counter); });
+        })();
+
+        // ===== AOS =====
+        AOS.init({ duration: 800, once: true, offset: 100 });
+
+        console.log('✅ Home page loaded successfully!');
+    </script>
+</body>
+
+</html>

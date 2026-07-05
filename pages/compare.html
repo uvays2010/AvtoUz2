@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqqoslash | Car Enterprise</title>
+    
+    <meta name="description" content="Avtomobillarni taqqoslash">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/compare.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Header content same as other pages -->
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="page-title">Avtomobillarni <span>taqqoslash</span></h1>
+                <p class="page-subtitle">Mashinalarni solishtiring va eng yaxshi tanlovni qiling</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Bosh sahifa</a>
+                    <span class="separator">/</span>
+                    <span>Taqqoslash</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Section -->
+    <section class="compare-page">
+        <div class="container">
+            <div class="compare-toolbar">
+                <div class="compare-count">
+                    <strong id="compareCount">0</strong> ta mashina taqqoslanmoqda
+                </div>
+                <div class="compare-actions">
+                    <button class="btn btn-outline" onclick="clearCompare()">
+                        <i class="fas fa-trash"></i> Tozalash
+                    </button>
+                    <a href="cars.html" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Mashina qo'shish
+                    </a>
+                </div>
+            </div>
+
+            <div id="compareContainer">
+                <!-- Compare content loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content same as other pages -->
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/compare.js"></script>
+    
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
+</body>
+</html>

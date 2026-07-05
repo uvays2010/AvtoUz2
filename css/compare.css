@@ -1,0 +1,474 @@
+/* ========================================
+   CAR-ENTERPRISE - COMPARE STYLES
+   ======================================== */
+
+/* ===== COMPARE BADGE ===== */
+.compare-badge {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compare-badge .badge-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: var(--font-xs);
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--white);
+}
+
+/* ===== COMPARE BUTTON ===== */
+.compare-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 2px solid var(--gray-300);
+    border-radius: var(--radius-full);
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-sm);
+    font-weight: 500;
+    color: var(--gray-600);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.compare-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.compare-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+.compare-btn i {
+    font-size: var(--font-md);
+}
+
+/* ===== COMPARE PAGE ===== */
+.compare-page {
+    padding: var(--spacing-3xl) 0;
+    background: var(--bg-primary);
+    min-height: 80vh;
+}
+
+.compare-page .page-header {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.compare-page .page-title {
+    font-size: var(--font-3xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.compare-page .page-title span {
+    color: var(--primary-color);
+}
+
+.compare-page .page-subtitle {
+    color: var(--text-muted);
+    font-size: var(--font-lg);
+}
+
+/* ===== COMPARE EMPTY ===== */
+.compare-empty {
+    text-align: center;
+    padding: var(--spacing-4xl) 0;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-primary);
+}
+
+.compare-empty i {
+    font-size: var(--font-6xl);
+    color: var(--gray-300);
+    margin-bottom: var(--spacing-lg);
+}
+
+.compare-empty h3 {
+    font-size: var(--font-2xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.compare-empty p {
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* ===== COMPARE TABLE ===== */
+.compare-table {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-primary);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.compare-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 0;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.compare-row:last-child {
+    border-bottom: none;
+}
+
+.compare-row .compare-label {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border-primary);
+    display: flex;
+    align-items: center;
+    font-size: var(--font-sm);
+}
+
+.compare-row .compare-item,
+.compare-row .compare-value {
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px solid var(--border-primary);
+    font-size: var(--font-sm);
+    color: var(--text-primary);
+}
+
+.compare-row .compare-item:last-child,
+.compare-row .compare-value:last-child {
+    border-right: none;
+}
+
+/* ===== COMPARE HEADER ===== */
+.compare-header {
+    background: var(--bg-secondary);
+    border-bottom: 2px solid var(--border-primary);
+}
+
+.compare-header .compare-item {
+    padding: var(--spacing-lg);
+    gap: var(--spacing-sm);
+}
+
+.compare-header .compare-item-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: var(--spacing-sm);
+}
+
+.compare-header .compare-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.compare-header .compare-item-image .compare-remove {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    background: var(--danger);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-xs);
+}
+
+.compare-header .compare-item-image .compare-remove:hover {
+    transform: scale(1.1);
+}
+
+.compare-header .compare-item h4 {
+    font-size: var(--font-md);
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.compare-header .compare-item .compare-price {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-xl);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.compare-header .compare-item .btn {
+    font-size: var(--font-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+}
+
+/* ===== COMPARE FEATURES ===== */
+.compare-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.compare-features li {
+    padding: var(--spacing-xs) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.compare-features li:last-child {
+    border-bottom: none;
+}
+
+.compare-features li i {
+    color: var(--success);
+    font-size: var(--font-sm);
+}
+
+/* ===== COLOR DOT ===== */
+.color-dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-primary);
+    margin-right: var(--spacing-sm);
+    flex-shrink: 0;
+}
+
+/* ===== BADGES ===== */
+.badge-success {
+    background: var(--success);
+    color: var(--white);
+    padding: 2px var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: var(--font-xs);
+    font-weight: 600;
+}
+
+.badge-warning {
+    background: var(--warning);
+    color: var(--gray-900);
+    padding: 2px var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: var(--font-xs);
+    font-weight: 600;
+}
+
+/* ===== STARS ===== */
+.compare-value .stars {
+    color: var(--warning);
+    font-size: var(--font-sm);
+}
+
+.compare-value .rating-number {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-left: var(--spacing-xs);
+}
+
+.compare-value .reviews-count {
+    color: var(--text-muted);
+    font-size: var(--font-xs);
+    margin-left: var(--spacing-xs);
+}
+
+/* ===== COMPARE ACTIONS ===== */
+.compare-actions .compare-value {
+    padding: var(--spacing-lg);
+}
+
+.compare-actions .compare-value .btn {
+    min-width: 150px;
+}
+
+/* ===== COMPARE TOOLBAR ===== */
+.compare-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.compare-toolbar .compare-count {
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+}
+
+.compare-toolbar .compare-count strong {
+    color: var(--text-primary);
+}
+
+.compare-toolbar .compare-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .compare-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .compare-row .compare-label {
+        border-right: none;
+        border-bottom: 1px solid var(--border-primary);
+        justify-content: center;
+        background: var(--bg-secondary);
+    }
+    
+    .compare-row .compare-item,
+    .compare-row .compare-value {
+        border-right: none;
+        border-bottom: 1px solid var(--border-light);
+        padding: var(--spacing-md);
+    }
+    
+    .compare-row .compare-item:last-child,
+    .compare-row .compare-value:last-child {
+        border-bottom: none;
+    }
+    
+    .compare-header .compare-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .compare-header .compare-item-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .compare-features {
+        text-align: center;
+    }
+    
+    .compare-features li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .compare-page .page-title {
+        font-size: var(--font-2xl);
+    }
+    
+    .compare-header .compare-item-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .compare-header .compare-item h4 {
+        font-size: var(--font-sm);
+    }
+    
+    .compare-header .compare-item .compare-price {
+        font-size: var(--font-lg);
+    }
+    
+    .compare-actions .compare-value .btn {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .compare-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .compare-header .compare-item-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .compare-header .compare-item-image .compare-remove {
+        width: 22px;
+        height: 22px;
+        font-size: var(--font-xs);
+    }
+    
+    .compare-row .compare-value {
+        font-size: var(--font-xs);
+        padding: var(--spacing-sm);
+    }
+    
+    .compare-features li {
+        font-size: var(--font-xs);
+    }
+}
+
+/* ===== DARK THEME ===== */
+[data-theme="dark"] .compare-empty {
+    background: var(--bg-card);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .compare-table {
+    background: var(--bg-card);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .compare-row {
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .compare-row .compare-label {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .compare-row .compare-item,
+[data-theme="dark"] .compare-row .compare-value {
+    border-color: var(--border-primary);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .compare-header {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+
+[data-theme="dark"] .compare-header .compare-item h4 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .compare-features li {
+    border-color: var(--border-light);
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .color-dot {
+    border-color: var(--border-primary);
+}

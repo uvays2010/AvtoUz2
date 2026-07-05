@@ -1,0 +1,247 @@
+/* ========================================
+   CAR-ENTERPRISE - PAGINATION STYLES
+   ======================================== */
+
+/* ===== PAGINATION CONTAINER ===== */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-2xl);
+    flex-wrap: wrap;
+}
+
+/* ===== PAGE BUTTONS ===== */
+.pagination .page-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 var(--spacing-sm);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.pagination .page-btn:hover:not(.disabled):not(.active) {
+    background: var(--bg-hover);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.pagination .page-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+    cursor: default;
+}
+
+.pagination .page-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.pagination .page-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+/* ===== PAGE DOTS ===== */
+.pagination .page-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    color: var(--text-muted);
+    font-size: var(--font-lg);
+    font-weight: 700;
+}
+
+/* ===== PAGINATION INFO ===== */
+.pagination-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    font-size: var(--font-sm);
+    color: var(--text-muted);
+}
+
+.pagination-info strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* ===== ITEMS PER PAGE ===== */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.pagination-controls label {
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+.pagination-controls select {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-sm);
+    cursor: pointer;
+    transition: border-color var(--transition-fast);
+}
+
+.pagination-controls select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* ===== PAGINATION SIZES ===== */
+.pagination-sm .page-btn {
+    min-width: 32px;
+    height: 32px;
+    font-size: var(--font-xs);
+    padding: 0 var(--spacing-xs);
+}
+
+.pagination-sm .page-dots {
+    min-width: 32px;
+    height: 32px;
+    font-size: var(--font-md);
+}
+
+.pagination-lg .page-btn {
+    min-width: 48px;
+    height: 48px;
+    font-size: var(--font-md);
+    padding: 0 var(--spacing-md);
+}
+
+.pagination-lg .page-dots {
+    min-width: 48px;
+    height: 48px;
+    font-size: var(--font-xl);
+}
+
+/* ===== PAGINATION ALIGNMENT ===== */
+.pagination-center {
+    justify-content: center;
+}
+
+.pagination-left {
+    justify-content: flex-start;
+}
+
+.pagination-right {
+    justify-content: flex-end;
+}
+
+/* ===== PAGINATION WITH ICONS ===== */
+.pagination .page-btn i {
+    font-size: var(--font-sm);
+}
+
+.pagination .page-btn .page-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .pagination .page-btn {
+        min-width: 36px;
+        height: 36px;
+        font-size: var(--font-xs);
+        padding: 0 var(--spacing-xs);
+    }
+    
+    .pagination .page-dots {
+        min-width: 36px;
+        height: 36px;
+        font-size: var(--font-md);
+    }
+    
+    .pagination-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-xs);
+    }
+    
+    .pagination-info {
+        font-size: var(--font-xs);
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination .page-btn {
+        min-width: 32px;
+        height: 32px;
+        font-size: var(--font-xs);
+        padding: 0 var(--spacing-xs);
+    }
+    
+    .pagination .page-btn:not(.active):not(.disabled) {
+        display: none;
+    }
+    
+    .pagination .page-btn.active,
+    .pagination .page-btn:first-child,
+    .pagination .page-btn:last-child {
+        display: flex;
+    }
+    
+    .pagination .page-dots {
+        min-width: 32px;
+        height: 32px;
+        font-size: var(--font-sm);
+    }
+}
+
+/* ===== DARK THEME ===== */
+[data-theme="dark"] .pagination .page-btn {
+    background: var(--bg-card);
+    border-color: var(--border-primary);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .pagination .page-btn:hover:not(.disabled):not(.active) {
+    background: var(--bg-hover);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .pagination .page-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+[data-theme="dark"] .pagination .page-dots {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .pagination-controls select {
+    background: var(--bg-card);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+}

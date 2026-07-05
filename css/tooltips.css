@@ -1,0 +1,249 @@
+/* ========================================
+   CAR-ENTERPRISE - TOOLTIPS STYLES
+   ======================================== */
+
+/* ===== TOOLTIP CONTAINER ===== */
+.tooltip {
+    position: fixed;
+    z-index: 1070;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--gray-900);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-xs);
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    max-width: 250px;
+    word-wrap: break-word;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95) translateY(-4px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+}
+
+.tooltip.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+}
+
+/* ===== TOOLTIP ARROW ===== */
+.tooltip .tooltip-arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--gray-900);
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+/* ===== TOOLTIP POSITIONS ===== */
+.tooltip[data-placement="top"] .tooltip-arrow {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip[data-placement="bottom"] .tooltip-arrow {
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip[data-placement="left"] .tooltip-arrow {
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.tooltip[data-placement="right"] .tooltip-arrow {
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* ===== TOOLTIP VARIANTS ===== */
+.tooltip.tooltip-primary {
+    background: var(--primary-color);
+}
+
+.tooltip.tooltip-primary .tooltip-arrow {
+    background: var(--primary-color);
+}
+
+.tooltip.tooltip-success {
+    background: var(--success);
+}
+
+.tooltip.tooltip-success .tooltip-arrow {
+    background: var(--success);
+}
+
+.tooltip.tooltip-danger {
+    background: var(--danger);
+}
+
+.tooltip.tooltip-danger .tooltip-arrow {
+    background: var(--danger);
+}
+
+.tooltip.tooltip-warning {
+    background: var(--warning);
+    color: var(--gray-900);
+}
+
+.tooltip.tooltip-warning .tooltip-arrow {
+    background: var(--warning);
+}
+
+.tooltip.tooltip-info {
+    background: var(--info);
+}
+
+.tooltip.tooltip-info .tooltip-arrow {
+    background: var(--info);
+}
+
+/* ===== TOOLTIP SIZES ===== */
+.tooltip.tooltip-sm {
+    padding: 2px var(--spacing-sm);
+    font-size: var(--font-xs);
+    max-width: 150px;
+}
+
+.tooltip.tooltip-lg {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-sm);
+    max-width: 350px;
+}
+
+/* ===== TOOLTIP WITH ICON ===== */
+.tooltip .tooltip-icon {
+    margin-right: var(--spacing-xs);
+}
+
+.tooltip .tooltip-icon i {
+    font-size: var(--font-sm);
+}
+
+/* ===== TOOLTIP ANIMATIONS ===== */
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes tooltipFadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.95) translateY(-4px);
+    }
+}
+
+.tooltip.visible {
+    animation: tooltipFadeIn 0.2s ease forwards;
+}
+
+.tooltip.hiding {
+    animation: tooltipFadeOut 0.2s ease forwards;
+}
+
+/* ===== TOOLTIP TRIGGER ELEMENTS ===== */
+[data-tooltip] {
+    position: relative;
+    cursor: help;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .tooltip {
+        max-width: 200px;
+        font-size: var(--font-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .tooltip.tooltip-lg {
+        max-width: 250px;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .tooltip {
+        max-width: 180px;
+        font-size: var(--font-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .tooltip .tooltip-arrow {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* ===== DARK THEME ===== */
+[data-theme="dark"] .tooltip {
+    background: var(--gray-700);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .tooltip .tooltip-arrow {
+    background: var(--gray-700);
+}
+
+[data-theme="dark"] .tooltip.tooltip-primary {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+[data-theme="dark"] .tooltip.tooltip-primary .tooltip-arrow {
+    background: var(--primary-color);
+}
+
+[data-theme="dark"] .tooltip.tooltip-success {
+    background: var(--success);
+    color: var(--white);
+}
+
+[data-theme="dark"] .tooltip.tooltip-success .tooltip-arrow {
+    background: var(--success);
+}
+
+[data-theme="dark"] .tooltip.tooltip-danger {
+    background: var(--danger);
+    color: var(--white);
+}
+
+[data-theme="dark"] .tooltip.tooltip-danger .tooltip-arrow {
+    background: var(--danger);
+}
+
+[data-theme="dark"] .tooltip.tooltip-warning {
+    background: var(--warning);
+    color: var(--gray-900);
+}
+
+[data-theme="dark"] .tooltip.tooltip-warning .tooltip-arrow {
+    background: var(--warning);
+}
+
+[data-theme="dark"] .tooltip.tooltip-info {
+    background: var(--info);
+    color: var(--white);
+}
+
+[data-theme="dark"] .tooltip.tooltip-info .tooltip-arrow {
+    background: var(--info);
+}

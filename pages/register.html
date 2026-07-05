@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro'yxatdan o'tish | Car Enterprise</title>
+    
+    <meta name="description" content="Car Enterprise tizimida ro'yxatdan o'tish">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45"/></svg>
+                <div class="loader-text">Car Enterprise</div>
+            </div>
+            <div class="loader-progress"><div class="progress-bar" id="progressBar"></div></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contact">
+                        <a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                        <a href="mailto:info@car-enterprise.uz"><i class="fas fa-envelope"></i> info@car-enterprise.uz</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="header-auth">
+                        <a href="login.html" class="auth-link"><i class="fas fa-user"></i> Kirish</a>
+                        <a href="register.html" class="auth-link register active"><i class="fas fa-user-plus"></i> Ro'yxat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                            <li><a href="cars.html"><i class="fas fa-car"></i> Mashinalar</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> Biz haqimizda</a></li>
+                            <li><a href="services.html"><i class="fas fa-cogs"></i> Xizmatlar</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-images"></i> Galereya</a></li>
+                            <li><a href="shop.html"><i class="fas fa-store"></i> Do'kon</a></li>
+                            <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Aloqa</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                        <button class="search-toggle" id="searchToggle"><i class="fas fa-search"></i></button>
+                        <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cartCount">0</span></a>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal-content">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Mashina nomi, brend yoki kategoriya bo'yicha qidiring...">
+                    <button id="searchSubmit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item"><i class="fas fa-car"></i> BMW X5</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Mercedes-Benz S-Class</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Toyota Camry</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Auth Section -->
+    <section class="auth-page">
+        <div class="container">
+            <div class="auth-container" data-aos="fade-up">
+                <div class="auth-header">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+                    <h2>Ro'yxatdan o'tish</h2>
+                    <p>Hisob yarating va premium xizmatlardan foydalaning</p>
+                </div>
+
+                <form class="auth-form" id="registerForm">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="registerName">Ism va familiya <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" id="registerName" class="has-icon" placeholder="Ismingiz va familiyangiz" required>
+                        </div>
+                        <div class="error-message" id="nameError">Ism kamida 2 harf bo'lishi kerak</div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="registerEmail">Email <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="registerEmail" class="has-icon" placeholder="Email manzilingiz" required>
+                        </div>
+                        <div class="error-message" id="registerEmailError">Iltimos, to'g'ri email kiriting</div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="registerPhone">Telefon raqam</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-phone input-icon"></i>
+                            <input type="tel" id="registerPhone" class="has-icon" placeholder="+998 90 123 45 67">
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="registerPassword">Parol <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock input-icon"></i>
+                            <input type="password" id="registerPassword" class="has-icon" placeholder="Parolingiz (kamida 6 belgi)" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword('registerPassword', this)">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-bar">
+                                <div class="bar" id="passwordStrengthBar"></div>
+                            </div>
+                            <span class="strength-text" id="passwordStrengthText">Parolni kiriting</span>
+                        </div>
+                        <div class="error-message" id="registerPasswordError">Parol kamida 6 belgi bo'lishi kerak</div>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <label for="registerConfirm">Parolni tasdiqlang <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-check-circle input-icon"></i>
+                            <input type="password" id="registerConfirm" class="has-icon" placeholder="Parolni qayta kiriting" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword('registerConfirm', this)">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="error-message" id="confirmError">Parollar mos kelmadi</div>
+                    </div>
+
+                    <!-- Terms -->
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox" id="registerTerms" required>
+                            <span>Men <a href="#">foydalanish shartlari</a> va <a href="#">maxfiylik siyosatini</a> o'qib, qabul qilaman <span class="required">*</span></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block submit-btn">
+                        <i class="fas fa-user-plus"></i> Ro'yxatdan o'tish
+                    </button>
+
+                    <div class="social-auth">
+                        <div class="divider">
+                            <span>yoki</span>
+                        </div>
+                        <div class="social-buttons">
+                            <button type="button" class="social-btn google">
+                                <i class="fab fa-google"></i> Google
+                            </button>
+                            <button type="button" class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="auth-footer">
+                        Hisobingiz bormi? <a href="login.html">Kirish</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="../index.html">
+                                <img src="../images/icons/logo.svg" alt="Car Enterprise">
+                                <span>Car <span>Enterprise</span></span>
+                            </a>
+                        </div>
+                        <p>Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tez havolalar</h4>
+                        <ul>
+                            <li><a href="../index.html">Bosh sahifa</a></li>
+                            <li><a href="cars.html">Mashinalar</a></li>
+                            <li><a href="about.html">Biz haqimizda</a></li>
+                            <li><a href="services.html">Xizmatlar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Aloqa</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><a href="#">Avtomobil sotish</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Kredit</a></li>
+                            <li><a href="#">Lizing</a></li>
+                            <li><a href="#">Sug'urta</a></li>
+                            <li><a href="#">Servis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Bog'lanish</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Toshkent, O'zbekiston</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@car-enterprise.uz">info@car-enterprise.uz</a></li>
+                            <li><i class="fas fa-clock"></i><span>Dushanba - Shanba: 09:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 <a href="../index.html">Car Enterprise</a>. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-links">
+                        <a href="#">Maxfiylik siyosati</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Cookie siyosati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/auth.js"></script>
+    
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+
+        // Password strength indicator
+        document.getElementById('registerPassword').addEventListener('input', function() {
+            const password = this.value;
+            const bar = document.getElementById('passwordStrengthBar');
+            const text = document.getElementById('passwordStrengthText');
+            
+            let strength = 0;
+            let message = '';
+            let color = '';
+            
+            if (password.length >= 6) strength++;
+            if (password.length >= 10) strength++;
+            if (/[a-z]/.test(password) && /[A-Z]/.test(password)) strength++;
+            if (/\d/.test(password)) strength++;
+            if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) strength++;
+            
+            const width = (strength / 5) * 100;
+            
+            if (password.length === 0) {
+                bar.style.width = '0%';
+                bar.style.background = '#dee2e6';
+                text.textContent = 'Parolni kiriting';
+                text.style.color = 'var(--gray-500)';
+                return;
+            }
+            
+            switch (strength) {
+                case 0:
+                case 1:
+                    message = 'Kuchsiz';
+                    color = '#dc3545';
+                    break;
+                case 2:
+                    message = 'O\'rtacha';
+                    color = '#ffc107';
+                    break;
+                case 3:
+                    message = 'Yaxshi';
+                    color = '#17a2b8';
+                    break;
+                case 4:
+                case 5:
+                    message = 'Kuchli';
+                    color = '#28a745';
+                    break;
+            }
+            
+            bar.style.width = width + '%';
+            bar.style.background = color;
+            text.textContent = message;
+            text.style.color = color;
+        });
+
+        // Confirm password validation
+        document.getElementById('registerConfirm').addEventListener('input', function() {
+            const password = document.getElementById('registerPassword').value;
+            const confirm = this.value;
+            const error = document.getElementById('confirmError');
+            
+            if (confirm.length > 0 && password !== confirm) {
+                this.classList.add('error');
+                error.classList.add('show');
+            } else {
+                this.classList.remove('error');
+                error.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

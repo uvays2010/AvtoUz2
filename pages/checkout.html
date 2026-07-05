@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyurtma rasmiylashtirish | Car Enterprise</title>
+    
+    <meta name="description" content="Avtomobil buyurtmasini rasmiylashtirish">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45"/></svg>
+                <div class="loader-text">Car Enterprise</div>
+            </div>
+            <div class="loader-progress"><div class="progress-bar" id="progressBar"></div></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contact">
+                        <a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                        <a href="mailto:info@car-enterprise.uz"><i class="fas fa-envelope"></i> info@car-enterprise.uz</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="header-auth">
+                        <a href="login.html" class="auth-link"><i class="fas fa-user"></i> Kirish</a>
+                        <a href="register.html" class="auth-link register"><i class="fas fa-user-plus"></i> Ro'yxat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                            <li><a href="cars.html"><i class="fas fa-car"></i> Mashinalar</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> Biz haqimizda</a></li>
+                            <li><a href="services.html"><i class="fas fa-cogs"></i> Xizmatlar</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-images"></i> Galereya</a></li>
+                            <li><a href="shop.html"><i class="fas fa-store"></i> Do'kon</a></li>
+                            <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Aloqa</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                        <button class="search-toggle" id="searchToggle"><i class="fas fa-search"></i></button>
+                        <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cartCount">0</span></a>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal-content">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Mashina nomi, brend yoki kategoriya bo'yicha qidiring...">
+                    <button id="searchSubmit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item"><i class="fas fa-car"></i> BMW X5</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Mercedes-Benz S-Class</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Toyota Camry</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="page-title">Buyurtma <span>rasmiylashtirish</span></h1>
+                <p class="page-subtitle">Buyurtmangizni tasdiqlang va to'lovni amalga oshiring</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Bosh sahifa</a>
+                    <span class="separator">/</span>
+                    <a href="cart.html">Savat</a>
+                    <span class="separator">/</span>
+                    <span>Buyurtma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section" data-aos="fade-up">
+        <div class="container">
+            <div class="checkout-layout">
+                <!-- Checkout Form -->
+                <div class="checkout-form">
+                    <div class="form-card">
+                        <h3><i class="fas fa-user"></i> Shaxsiy ma'lumotlar</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Ism va familiya <span class="required">*</span></label>
+                                <input type="text" id="fullName" placeholder="Ismingiz va familiyangiz" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon raqam <span class="required">*</span></label>
+                                <input type="tel" id="phone" placeholder="+998 90 123 45 67" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" placeholder="Email manzilingiz" required>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Yetkazib berish manzili</h3>
+                        <div class="form-group">
+                            <label for="address">Manzil <span class="required">*</span></label>
+                            <input type="text" id="address" placeholder="To'liq manzilingiz" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">Shahar <span class="required">*</span></label>
+                                <input type="text" id="city" placeholder="Shahar" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCode">Pochta indeksi</label>
+                                <input type="text" id="zipCode" placeholder="Pochta indeksi">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <h3><i class="fas fa-credit-card"></i> To'lov usuli</h3>
+                        <div class="payment-methods">
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="card" checked>
+                                <span class="payment-icon"><i class="fas fa-credit-card"></i></span>
+                                <span class="payment-name">Karta orqali</span>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="cash">
+                                <span class="payment-icon"><i class="fas fa-money-bill-wave"></i></span>
+                                <span class="payment-name">Naqd pul</span>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="bank">
+                                <span class="payment-icon"><i class="fas fa-university"></i></span>
+                                <span class="payment-name">Bank o'tkazmasi</span>
+                            </label>
+                        </div>
+                        
+                        <div class="card-details" id="cardDetails">
+                            <div class="form-group">
+                                <label for="cardNumber">Karta raqami</label>
+                                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cardExpiry">Amal qilish muddati</label>
+                                    <input type="text" id="cardExpiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardCvv">CVV</label>
+                                    <input type="text" id="cardCvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <h3><i class="fas fa-sticky-note"></i> Qo'shimcha ma'lumot</h3>
+                        <div class="form-group">
+                            <label for="notes">Izoh</label>
+                            <textarea id="notes" rows="3" placeholder="Buyurtma haqida qo'shimcha ma'lumot..."></textarea>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg btn-block" id="placeOrder">
+                        <i class="fas fa-check-circle"></i> Buyurtmani tasdiqlash
+                    </button>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h3>Buyurtma <span>jami</span></h3>
+                    
+                    <div class="order-items" id="orderItems">
+                        <!-- Order items loaded dynamically -->
+                    </div>
+                    
+                    <div class="order-total">
+                        <div class="total-row">
+                            <span>Mahsulotlar narxi</span>
+                            <span id="orderSubtotal">0 so'm</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Yetkazib berish</span>
+                            <span id="orderShipping">0 so'm</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Soliq (12%)</span>
+                            <span id="orderTax">0 so'm</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Jami</span>
+                            <span id="orderTotal">0 so'm</span>
+                        </div>
+                    </div>
+
+                    <div class="order-info">
+                        <p><i class="fas fa-check-circle" style="color:var(--success);"></i> Bepul yetkazib berish</p>
+                        <p><i class="fas fa-check-circle" style="color:var(--success);"></i> 3 yil garantiya</p>
+                        <p><i class="fas fa-check-circle" style="color:var(--success);"></i> 7 kun ichida qaytarish</p>
+                    </div>
+
+                    <a href="cart.html" class="btn btn-outline btn-block">
+                        <i class="fas fa-arrow-left"></i> Savatga qaytish
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="../index.html">
+                                <img src="../images/icons/logo.svg" alt="Car Enterprise">
+                                <span>Car <span>Enterprise</span></span>
+                            </a>
+                        </div>
+                        <p>Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tez havolalar</h4>
+                        <ul>
+                            <li><a href="../index.html">Bosh sahifa</a></li>
+                            <li><a href="cars.html">Mashinalar</a></li>
+                            <li><a href="about.html">Biz haqimizda</a></li>
+                            <li><a href="services.html">Xizmatlar</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Aloqa</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><a href="#">Avtomobil sotish</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Kredit</a></li>
+                            <li><a href="#">Lizing</a></li>
+                            <li><a href="#">Sug'urta</a></li>
+                            <li><a href="#">Servis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Bog'lanish</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Toshkent, O'zbekiston</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@car-enterprise.uz">info@car-enterprise.uz</a></li>
+                            <li><i class="fas fa-clock"></i><span>Dushanba - Shanba: 09:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 <a href="../index.html">Car Enterprise</a>. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-links">
+                        <a href="#">Maxfiylik siyosati</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Cookie siyosati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/checkout.js"></script>
+    
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
+</body>
+</html>

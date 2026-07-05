@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xizmatlar | Car Enterprise</title>
+    
+    <meta name="description" content="Car Enterprise xizmatlari - Avtomobil sotish, test drive, kredit, lizing va boshqa xizmatlar">
+    <meta name="keywords" content="avtomobil xizmatlari, test drive, kredit, lizing, sug'urta, servis">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45"/>
+                </svg>
+                <div class="loader-text">Car Enterprise</div>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contact">
+                        <a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                        <a href="mailto:info@car-enterprise.uz"><i class="fas fa-envelope"></i> info@car-enterprise.uz</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="header-auth">
+                        <a href="../pages/login.html" class="auth-link"><i class="fas fa-user"></i> Kirish</a>
+                        <a href="../pages/register.html" class="auth-link register"><i class="fas fa-user-plus"></i> Ro'yxat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+                    
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                            <li><a href="../pages/cars.html"><i class="fas fa-car"></i> Mashinalar</a></li>
+                            <li><a href="../pages/about.html"><i class="fas fa-info-circle"></i> Biz haqimizda</a></li>
+                            <li><a href="../pages/services.html" class="active"><i class="fas fa-cogs"></i> Xizmatlar</a></li>
+                            <li><a href="../pages/blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="../pages/gallery.html"><i class="fas fa-images"></i> Galereya</a></li>
+                            <li><a href="../pages/shop.html"><i class="fas fa-store"></i> Do'kon</a></li>
+                            <li><a href="../pages/contact.html"><i class="fas fa-phone-alt"></i> Aloqa</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="search-toggle" id="searchToggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href="../pages/cart.html" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal-content">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Mashina nomi, brend yoki kategoriya bo'yicha qidiring...">
+                    <button id="searchSubmit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions">
+                    <div class="suggestion-item"><i class="fas fa-car"></i> BMW X5</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Mercedes-Benz S-Class</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="page-title">Bizning <span>xizmatlar</span></h1>
+                <p class="page-subtitle">Sizga eng yaxshi xizmat va sifatni taqdim etamiz</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Bosh sahifa</a>
+                    <span class="separator">/</span>
+                    <span>Xizmatlar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SHOWROOM VIDEO (AVTOMATIK) ===== -->
+    <section class="showroom-section" data-aos="fade-up">
+        <div class="container">
+            <div class="showroom-video-wrapper">
+                <video autoplay muted loop playsinline class="showroom-video">
+                    <source src="../videos/showroom.mp4" type="video/mp4">
+                    <source src="../videos/showroom.webm" type="video/webm">
+                    Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
+                </video>
+                <div class="video-caption">
+                    <i class="fas fa-video"></i>
+                    <span>🏢 Bizning salonimizdan lavha</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Xizmatlar</span>
+                <h2 class="section-title">Biz <span>taklif qiladigan</span> xizmatlar</h2>
+                <p class="section-description">Sizning ehtiyojlaringizni qondirish uchun to'liq xizmat ko'rsatamiz</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Avtomobil sotish</h3>
+                    <p>Eng yangi va ishlatilgan avtomobillarni sotish bo'yicha to'liq xizmat</p>
+                    <a href="../pages/cars.html" class="btn btn-outline btn-sm">Batafsil <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Test Drive</h3>
+                    <p>Xariddan oldin avtomobilni sinab ko'rish imkoniyati</p>
+                    <a href="../pages/cars.html" class="btn btn-outline btn-sm">Batafsil <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Kredit</h3>
+                    <p>0% boshlang'ich to'lov bilan avtomobil krediti</p>
+                    <a href="#" class="btn btn-outline btn-sm">Batafsil <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Lizing</h3>
+                    <p>Avtomobilni lizing asosida sotib olish imkoniyati</p>
+                    <a href="#" class="btn btn-outline btn-sm">Batafsil <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sug'urta</h3>
+                    <p>Avtomobilingizni barcha xavflardan sug'urtalash</p>
+                    <a href="#" class="btn btn-outline btn-sm">Batafsil <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Servis</h3>
+                    <p>Avtomobilingizni professional texnik xizmat ko'rsatish</p>
+                    <a href="#" class="btn btn-outline btn-sm">Batafsil <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS SECTION ===== -->
+    <section class="process-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Qanday ishlaymiz</span>
+                <h2 class="section-title">Biz bilan ishlash <span>jarayoni</span></h2>
+                <p class="section-description">4 oddiy qadamda orzuingizdagi mashinaga egalik qiling</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4>Mashina tanlash</h4>
+                        <p>Katalogimizdan o'zingizga yoqqan mashinani tanlang</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4>Test Drive</h4>
+                        <p>Mashinani sinab ko'ring va hisobingizni tekshiring</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4>Shartnoma tuzish</h4>
+                        <p>Barcha hujjatlarni rasmiylashtiring va shartnoma imzolang</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h4>Mashinani olish</h4>
+                        <p>Orzuingizdagi mashinani oling va hayotdan zavqlaning!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section class="pricing-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Narxlar</span>
+                <h2 class="section-title">Bizning <span>paketlar</span></h2>
+                <p class="section-description">Sizning ehtiyojlaringizga mos keladigan paketlarni tanlang</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h4>Standart</h4>
+                        <div class="pricing-price">
+                            <span class="price">$0</span>
+                            <span class="period">/ oy</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Avtomobil katalogi</li>
+                        <li><i class="fas fa-check"></i> Test Drive</li>
+                        <li><i class="fas fa-check"></i> 1 yil garantiya</li>
+                        <li><i class="fas fa-check"></i> Texnik yordam</li>
+                        <li><i class="fas fa-times"></i> Kredit</li>
+                        <li><i class="fas fa-times"></i> Sug'urta</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Tanlash</a>
+                </div>
+                
+                <div class="pricing-card featured" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="pricing-badge">Eng mashhur</div>
+                    <div class="pricing-header">
+                        <h4>Premium</h4>
+                        <div class="pricing-price">
+                            <span class="price">$49</span>
+                            <span class="period">/ oy</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Avtomobil katalogi</li>
+                        <li><i class="fas fa-check"></i> Test Drive</li>
+                        <li><i class="fas fa-check"></i> 3 yil garantiya</li>
+                        <li><i class="fas fa-check"></i> Texnik yordam</li>
+                        <li><i class="fas fa-check"></i> Kredit</li>
+                        <li><i class="fas fa-check"></i> Sug'urta</li>
+                    </ul>
+                    <a style="color: white;" href="#" class="btn btn-primary btn-block">Tanlash</a>
+                </div>
+                
+                <div class="pricing-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h4>VIP</h4>
+                        <div class="pricing-price">
+                            <span class="price">$99</span>
+                            <span class="period">/ oy</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Avtomobil katalogi</li>
+                        <li><i class="fas fa-check"></i> Test Drive</li>
+                        <li><i class="fas fa-check"></i> 5 yil garantiya</li>
+                        <li><i class="fas fa-check"></i> 24/7 Texnik yordam</li>
+                        <li><i class="fas fa-check"></i> Kredit</li>
+                        <li><i class="fas fa-check"></i> Sug'urta</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Tanlash</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" data-aos="fade-up">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Xizmatlarimizdan foydalanishga tayyormisiz?</h2>
+                <p>Biz bilan bog'laning va eng yaxshi xizmatga ega bo'ling</p>
+                <div class="cta-buttons">
+                    <a href="../pages/contact.html" style="color: white;" class="btn btn-primary">Biz bilan bog'lanish</a>
+                    <a href="../pages/cars.html" class="btn btn-outline-light">Mashinalarni ko'rish</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="../index.html">
+                                <img src="../images/icons/logo.svg" alt="Car Enterprise">
+                                <span>Car <span>Enterprise</span></span>
+                            </a>
+                        </div>
+                        <p>Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Tez havolalar</h4>
+                        <ul>
+                            <li><a href="../index.html">Bosh sahifa</a></li>
+                            <li><a href="../pages/cars.html">Mashinalar</a></li>
+                            <li><a href="../pages/about.html">Biz haqimizda</a></li>
+                            <li><a href="../pages/services.html">Xizmatlar</a></li>
+                            <li><a href="../pages/blog.html">Blog</a></li>
+                            <li><a href="../pages/contact.html">Aloqa</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><a href="#">Avtomobil sotish</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Kredit</a></li>
+                            <li><a href="#">Lizing</a></li>
+                            <li><a href="#">Sug'urta</a></li>
+                            <li><a href="#">Servis</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Bog'lanish</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Toshkent, O'zbekiston</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@car-enterprise.uz">info@car-enterprise.uz</a></li>
+                            <li><i class="fas fa-clock"></i><span>Dushanba - Shanba: 09:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 <a href="../index.html">Car Enterprise</a>. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-links">
+                        <a href="#">Maxfiylik siyosati</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Cookie siyosati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== JavaScript ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/services.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

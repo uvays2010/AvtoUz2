@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz haqimizda | Car Enterprise</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Car Enterprise haqida - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri">
+    <meta name="keywords" content="car enterprise, avtomobil saloni, biz haqimizda, kompaniya">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" />
+                </svg>
+                <div class="loader-text">Car Enterprise</div>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-contact">
+                        <a href="tel:+998901234567"><i class="fas fa-phone"></i> +998 90 123 45 67</a>
+                        <a href="mailto:info@car-enterprise.uz"><i class="fas fa-envelope"></i>
+                            info@car-enterprise.uz</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="header-auth">
+                        <a href="../pages/login.html" class="auth-link"><i class="fas fa-user"></i> Kirish</a>
+                        <a href="../pages/register.html" class="auth-link register"><i class="fas fa-user-plus"></i> Ro'yxat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/icons/logo.svg" alt="Car Enterprise" class="logo-img">
+                            <span class="logo-text">Car <span>Enterprise</span></span>
+                        </a>
+                    </div>
+
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="../index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                            <li><a href="../pages/cars.html"><i class="fas fa-car"></i> Mashinalar</a></li>
+                            <li><a href="../pages/about.html" class="active"><i class="fas fa-info-circle"></i> Biz haqimizda</a>
+                            </li>
+                            <li><a href="../pages/services.html"><i class="fas fa-cogs"></i> Xizmatlar</a></li>
+                            <li><a href="../pages/blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="../pages/gallery.html"><i class="fas fa-images"></i> Galereya</a></li>
+                            <li><a href="../pages/shop.html"><i class="fas fa-store"></i> Do'kon</a></li>
+                            <li><a href="../pages/contact.html"><i class="fas fa-phone-alt"></i> Aloqa</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="search-toggle" id="searchToggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href="../pages/cart.html" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal-content">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                <div class="search-container">
+                    <input type="text" id="searchInput"
+                        placeholder="Mashina nomi, brend yoki kategoriya bo'yicha qidiring...">
+                    <button id="searchSubmit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-item"><i class="fas fa-car"></i> BMW X5</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Mercedes-Benz S-Class</div>
+                    <div class="suggestion-item"><i class="fas fa-car"></i> Toyota Camry</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1 class="page-title">Biz <span>haqimizda</span></h1>
+                <p class="page-subtitle">Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Bosh sahifa</a>
+                    <span class="separator">/</span>
+                    <span>Biz haqimizda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" data-aos="fade-up">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Chap tomonda: Matn -->
+                <div class="about-content" data-aos="fade-right">
+                    <span class="section-badge">Biz haqimizda</span>
+                    <h2 class="section-title">Car Enterprise <span>haqida</span></h2>
+                    <p class="about-text">
+                        Car Enterprise - 2015-yilda tashkil etilgan va bugungi kunda O'zbekistondagi
+                        eng yaxshi avtomobil salonlaridan biriga aylangan kompaniya. Biz mijozlarimizga
+                        eng sifatli va ishonchli avtomobillarni taqdim etamiz.
+                    </p>
+                    <p class="about-text">
+                        Bizning maqsadimiz - har bir mijozga o'zining orzusidagi mashinani topishga
+                        yordam berish va bu jarayonni imkon qadar qulay va yoqimli qilish.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="8">0</span>
+                            <span class="stat-label">Yillik tajriba</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="500">0</span>
+                            <span class="stat-label">Mashinalar</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1200">0</span>
+                            <span class="stat-label">Mijozlar</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="98">0</span>
+                            <span class="stat-label">% Mijozlar mamnun</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="../pages/cars.html" style="color: white;" class="btn btn-primary">Mashinalarni ko'rish</a>
+                        <a href="../pages/contact.html"  class="btn btn-outline">Biz bilan bog'lanish</a>
+                    </div>
+                </div>
+
+                <!-- O'ng tomonda: Rasm + Video (DOIMIY KO'RINADI) -->
+                <div class="about-image" data-aos="fade-left">
+                    <!-- Rasm -->
+                    <img src="../images/about/about-us.jpg" alt="Car Enterprise">
+
+                    <!-- VIDEO (DOIMIY KO'RINADI) -->
+                    <div class="about-video-wrapper">
+                        <video controls autoplay muted loop playsinline class="about-video">
+                            <source src="../videos/intro.mp4" type="video/mp4">
+                            <source src="../videos/intro.webm" type="video/webm">
+                            Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
+                        </video>
+                        <div class="video-caption">
+                            <i class="fas fa-play-circle"></i>
+                            <span>🚗 Car Enterprise haqida video</span>
+                        </div>
+                    </div>
+
+                    <div class="about-image-badge">
+                        <i class="fas fa-star"></i>
+                        <span>8 yil</span>
+                        <small>ish tajribasi</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSION & VISION ===== -->
+    <section class="mission-section" data-aos="fade-up">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Missiyamiz</h3>
+                    <p>Har bir mijozga eng sifatli avtomobil va eng yaxshi xizmatni taqdim etish.</p>
+                </div>
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Vizyonimiz</h3>
+                    <p>O'zbekiston va Markaziy Osiyodagi eng yaxshi avtomobil saloniga aylanish.</p>
+                </div>
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mission-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Qadriyatlarimiz</h3>
+                    <p>Ishonch, sifat, mijozlarga hurmat va professionallik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAM SECTION ===== -->
+    <section class="team-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Bizning jamoa</span>
+                <h2 class="section-title">Professional <span>jamoamiz</span></h2>
+                <p class="section-description">Eng yaxshi mutaxassislar sizga xizmat qilishga tayyor</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-image">
+                        <img src="../images/team/team-1.jpg" alt="Jamoa a'zosi">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Alisher Karimov</h4>
+                        <span>CEO & Asoschi</span>
+                        <p>10 yillik tajriba, avtomobil sohasidagi yetakchi mutaxassis</p>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-image">
+                        <img src="../images/team/team-2.jpg" alt="Jamoa a'zosi">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Dilnoza Abdullaeva</h4>
+                        <span>Marketing direktori</span>
+                        <p>8 yillik marketing tajribasi, brend strategiyasi bo'yicha mutaxassis</p>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-image">
+                        <img src="../images/team/team-3.jpg" alt="Jamoa a'zosi">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Javlon Abdullayev</h4>
+                        <span>Texnik direktor</span>
+                        <p>12 yillik texnik tajriba, avtomobil diagnostikasi bo'yicha mutaxassis</p>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-image">
+                        <img src="../images/team/team-4.jpg" alt="Jamoa a'zosi">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Madina Tursunova</h4>
+                        <span>Mijozlar bo'limi boshlig'i</span>
+                        <p>6 yillik mijozlar xizmati tajribasi, professional yordamchi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section class="why-us" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Nega biz?</span>
+                <h2 class="section-title">Nima uchun <span>Car Enterprise</span>?</h2>
+                <p class="section-description">Bizni tanlashning 5 ta asosiy sababi</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item" data-aos="flip-left" data-aos-delay="100">
+                    <div class="why-number">01</div>
+                    <h4>Sifatli avtomobillar</h4>
+                    <p>Faqat eng yaxshi va ishonchli avtomobillar</p>
+                </div>
+                <div class="why-item" data-aos="flip-left" data-aos-delay="200">
+                    <div class="why-number">02</div>
+                    <h4>Arzon narxlar</h4>
+                    <p>Eng past narxlar va 0% kredit imkoniyatlari</p>
+                </div>
+                <div class="why-item" data-aos="flip-left" data-aos-delay="300">
+                    <div class="why-number">03</div>
+                    <h4>Professional xizmat</h4>
+                    <p>Yuqori malakali mutaxassislar jamoasi</p>
+                </div>
+                <div class="why-item" data-aos="flip-left" data-aos-delay="400">
+                    <div class="why-number">04</div>
+                    <h4>24/7 Yordam</h4>
+                    <p>Kun bo'yi va kechasi sizga yordam berishga tayyormiz</p>
+                </div>
+                <div class="why-item" data-aos="flip-left" data-aos-delay="500">
+                    <div class="why-number">05</div>
+                    <h4>3 yil garantiya</h4>
+                    <p>Barcha avtomobillarga 3 yil davomida to'liq garantiya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" data-aos="fade-up">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Biz bilan bog'lanishing va orzuingizdagi mashinani toping</h2>
+                <p>1000+ avtomobil ichidan sizga eng mosini tanlang</p>
+                <div class="cta-buttons">
+                    <a href="../pages/contact.html" style="color: white;" class="btn btn-primary">Biz bilan bog'lanish</a>
+                    <a href="../pages/cars.html" class="btn btn-outline-light">Mashinalarni ko'rish</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <a href="../index.html">
+                                <img src="../images/icons/logo.svg" alt="Car Enterprise">
+                                <span>Car <span>Enterprise</span></span>
+                            </a>
+                        </div>
+                        <p>Car Enterprise - O'zbekistondagi eng yaxshi avtomobil salonlaridan biri. Biz sizga eng
+                            sifatli va ishonchli avtomobillarni taqdim etamiz.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Tez havolalar</h4>
+                        <ul>
+                            <li><a href="../index.html">Bosh sahifa</a></li>
+                            <li><a href="../pages/cars.html">Mashinalar</a></li>
+                            <li><a href="../pages/about.html">Biz haqimizda</a></li>
+                            <li><a href="../pages/services.html">Xizmatlar</a></li>
+                            <li><a href="../pages/blog.html">Blog</a></li>
+                            <li><a href="../pages/contact.html">Aloqa</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Xizmatlar</h4>
+                        <ul>
+                            <li><a href="#">Avtomobil sotish</a></li>
+                            <li><a href="#">Test Drive</a></li>
+                            <li><a href="#">Kredit</a></li>
+                            <li><a href="#">Lizing</a></li>
+                            <li><a href="#">Sug'urta</a></li>
+                            <li><a href="#">Servis</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Bog'lanish</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Toshkent, O'zbekiston</span></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                            <li><i class="fas fa-envelope"></i><a
+                                    href="mailto:info@car-enterprise.uz">info@car-enterprise.uz</a></li>
+                            <li><i class="fas fa-clock"></i><span>Dushanba - Shanba: 09:00 - 19:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 <a href="../index.html">Car Enterprise</a>. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-links">
+                        <a href="#">Maxfiylik siyosati</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Cookie siyosati</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== JavaScript ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/animations.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>

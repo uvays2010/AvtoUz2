@@ -1,0 +1,19 @@
+{
+  "brands": [
+    { "id": 1, "name": "BMW", "logo": "brands/bmw.png", "country": "Germaniya", "founded": 1916 },
+    { "id": 2, "name": "Mercedes-Benz", "logo": "brands/mercedes.png", "country": "Germaniya", "founded": 1926 },
+    { "id": 3, "name": "Toyota", "logo": "brands/toyota.png", "country": "Yaponiya", "founded": 1937 },
+    { "id": 4, "name": "Honda", "logo": "brands/honda.png", "country": "Yaponiya", "founded": 1948 },
+    { "id": 5, "name": "Lexus", "logo": "brands/lexus.png", "country": "Yaponiya", "founded": 1989 },
+    { "id": 6, "name": "Audi", "logo": "brands/audi.png", "country": "Germaniya", "founded": 1909 },
+    { "id": 7, "name": "Porsche", "logo": "brands/porsche.png", "country": "Germaniya", "founded": 1931 },
+    { "id": 8, "name": "Hyundai", "logo": "brands/hyundai.png", "country": "Koreya", "founded": 1967 },
+    { "id": 9, "name": "KIA", "logo": "brands/kia.png", "country": "Koreya", "founded": 1944 },
+    { "id": 10, "name": "Volkswagen", "logo": "brands/vw.png", "country": "Germaniya", "founded": 1937 },
+    { "id": 11, "name": "Chevrolet", "logo": "brands/chevrolet.png", "country": "AQSH", "founded": 1911 },
+    { "id": 12, "name": "Nissan", "logo": "brands/nissan.png", "country": "Yaponiya", "founded": 1933 },
+    { "id": 13, "name": "Ford", "logo": "brands/ford.png", "country": "AQSH", "founded": 1903 },
+    { "id": 14, "name": "Tesla", "logo": "brands/tesla.png", "country": "AQSH", "founded": 2003 },
+    { "id": 15, "name": "Mazda", "logo": "brands/mazda.png", "country": "Yaponiya", "founded": 1920 }
+  ]
+}

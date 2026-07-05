@@ -1,0 +1,87 @@
+/* ========================================
+   CAR-ENTERPRISE - ERROR PAGE STYLES
+   ======================================== */
+
+.error-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3xl) 0;
+}
+
+.error-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-content .error-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 150px;
+    font-weight: 900;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.3;
+}
+
+.error-content .error-title {
+    font-size: var(--font-4xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.error-content .error-title span {
+    color: var(--primary-color);
+}
+
+.error-content .error-text {
+    color: var(--gray-500);
+    font-size: var(--font-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.error-content .error-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .error-content .error-number {
+        font-size: 100px;
+    }
+    
+    .error-content .error-title {
+        font-size: var(--font-3xl);
+    }
+    
+    .error-content .error-text {
+        font-size: var(--font-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .error-content .error-number {
+        font-size: 80px;
+    }
+    
+    .error-content .error-title {
+        font-size: var(--font-2xl);
+    }
+    
+    .error-content .error-buttons {
+        flex-direction: column;
+    }
+    
+    .error-content .error-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ===== DARK THEME ===== */
+[data-theme="dark"] .error-content .error-text {
+    color: var(--gray-400);
+}
